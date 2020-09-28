@@ -1,17 +1,24 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Dingus Nation</title>
+    <title>Dingus Nation</title>
+    <style>
+        body {
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
     <h1>Big heading element</h1>
     <p>This is a <b>paragraph</b> element</p>
     <a href="https://www.youtube.com/watch?reload=9&v=d1YBv2mWll0" target="_blank" 
      title="Let's go to Google!" class="js-link-node"
-    >Click me! I'll redirect you to Google.</a>
-    <p class="js-pepe-laugh-p" style="visibility: hidden;">My name is:<br>
-        PepeLaugh</p>
+    style="border-radius: 20px; font-size: 45px; color: black; background-color: blanchedalmond;">Click me! I'll redirect you to Google.</a>
+    <h1 class="js-pepe-laugh-h1" style="visibility: hidden;" style="font-size: 80px;"><b>Oh no no no</b><br>
+        Missing critical information</h1>
     <img src="img\pepeLaughIMG-cropped.png" class="js-pepe-laugh" alt="Oh no no no, nobody tell him" style="visibility: hidden;">
+    
+
 
 
 
@@ -19,7 +26,7 @@
     <script>
     let linkNode = document.querySelector(".js-link-node")
     let imgNode = document.querySelector(".js-pepe-laugh")
-    let pepeLaughP = document.querySelector(".js-pepe-laugh-p")
+    let pepeLaughP = document.querySelector(".js-pepe-laugh-h1")
     linkNode.addEventListener('click', function(e){
         imgNode.style.visibility = 'visible';
         pepeLaughP.style.visibility = 'visible';
