@@ -6,18 +6,27 @@
 <body>
     <h1>Big heading element</h1>
     <p>This is a <b>paragraph</b> element</p>
-    <a href="https://google.com" target="_blank" 
-     title="Let's go to Google!"
+    <a href="https://www.youtube.com/watch?reload=9&v=d1YBv2mWll0" target="_blank" 
+     title="Let's go to Google!" class="js-link-node"
     >Click me! I'll redirect you to Google.</a>
-    <p>My name is:<br>
+    <p class="js-pepe-laugh-p" style="visibility: hidden;">My name is:<br>
         PepeLaugh</p>
-    <img src="img\pepeLaughIMG.jpg" alt="Oh no no no, nobody tell him">
+    <img src="img\pepeLaughIMG.jpg" class="js-pepe-laugh" alt="Oh no no no, nobody tell him" style="visibility: hidden;">
 
 
 
 
     <script>
-    
+    let linkNode = document.querySelector(".js-link-node")
+    let imgNode = document.querySelector(".js-pepe-laugh")
+    let pepeLaughP = document.querySelector(".js-pepe-laugh-p")
+    linkNode.addEventListener('click', function(e){
+        imgNode.style.visibility = 'visible';
+        pepeLaughP.style.visibility = 'visible';
+        console.log('JEBAITED')
+    })
+
+
     </script>
 </body>
 </html>
