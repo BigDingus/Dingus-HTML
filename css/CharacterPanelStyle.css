@@ -1,0 +1,28 @@
+body {
+border: 100px solid;
+border-image: url("https://cdn.wallpapersafari.com/65/51/3QObE1.png") 50%;
+border-color: #cccccc;
+border-image-repeat: repeat;
+}
+header {
+text-align: center;
+vertical-align: middle;
+}
+header h1{
+font-family: fantasy;
+}
+header img{
+border: 10px inset;
+padding: 2px;
+border-color: black;
+}
+main {
+text-align: left;
+}
+main h2 {
+font-size: 50px;
+font-weight: bold;
+}
+main p{
+font-family: serif;
+}
