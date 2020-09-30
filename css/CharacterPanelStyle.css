@@ -12,11 +12,11 @@ rgba(209,209,209,1) 52%,
 rgba(205,205,205,1) 66%, 
 rgba(131,131,131,1) 94%);
 }
-header {
+div.header-element header {
 text-align: center;
 vertical-align: middle;
 }
-header p.js-credit {
+div.header-element header p.js-credit {
 text-align: right;
 font-size: 15px;
 font-family: cursive;
@@ -24,29 +24,57 @@ color: black;
 margin-block-end: 100px; /*height of the block */
 margin-inline-end: 400px; /* pushed by set number of pixels from the right, in-line (end) */
 }
-header h1{
+div.header-element header h1{
 font-family: fantasy;
 }
-header img{
+div.header-element header img{
 border: 10px inset;
 padding: 2px;
 border-color: black;
 }
-header img.js-logo{
+div.header-element header img.js-logo{
 visibility: visible;
 border: hidden;
 padding: 0px;
 }
-main {
+div.main-element main {
 text-align: left;
+display:inline-block;
 }
-main h2 {
+div.main-element main img{
+border: 10px inset;
+padding: 2px;
+border-color: black;
+}
+div.main-element main h2 {
 font-size: 50px;
 font-weight: bold;
+font-family: fantasy;
 }
-main p{
+
+div.main-element main p.description{
 font-family: serif;
+font-size: 26px;
 }
-footer{
-    margin-block-start: 400px;
+div.main-element main p.caption{
+border: 50px solid rgba(255, 255, 255, 0.8);
+border-image: url("https://cdn.wallpapersafari.com/65/51/3QObE1.png") 50%;
+border-color: #cccccc;
+border-spacing: 500px 100px;
+font-family: fantasy;
+font-size: 20px;
+float: right;
+margin-top: 60px;
+margin-right: 15px;
+}
+div.main-element-friends{
+font-size: 50px;
+font-weight: bold;
+font-family: fantasy;
+
+}
+div.footer-element footer{
+font-family: cursive;
+font-size: 20px;
+margin-block-start: 400px;
 }
