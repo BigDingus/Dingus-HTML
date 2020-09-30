@@ -16,6 +16,9 @@ border: 10px inset;
 padding: 2px;
 border-color: black;
 }
+header img.js-logo{
+visibility: visible;
+}
 main {
 text-align: left;
 }
