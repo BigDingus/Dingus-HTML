@@ -18,6 +18,8 @@ border-color: black;
 }
 header img.js-logo{
 visibility: visible;
+border: hidden;
+padding: 0px;
 }
 main {
 text-align: left;
