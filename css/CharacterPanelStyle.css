@@ -1,7 +1,8 @@
 body {
-border: 100px solid rgba(255, 255, 255, 0.8);
+border: 50px solid rgba(255, 255, 255, 0.8);
 border-image: url("https://cdn.wallpapersafari.com/65/51/3QObE1.png") 50%;
 border-color: #cccccc;
+border-image-width: 125px;
 background: rgb(140,140,140);
 background: linear-gradient(
     100deg,
@@ -27,7 +28,7 @@ div.header-element header p.js-credit {
 text-align: right;
 font-size: 15px;
 color: black;
-margin-block-start: -0.4%;  /* height of the block from the top */
+margin-block-start: 0.1%;  /* height of the block from the top */
 margin-block-end: 4%; /* height of the block from the bottom */
 margin-inline-end: 22.1%; /* pushed by set number of pixels from the right, in-line (end) */
 }
@@ -66,10 +67,17 @@ font-family: serif;
 font-size: 26px;
 }
 div.main-element main p.caption{
-border: 50px solid rgba(255, 255, 255, 0.8);
-border-image: url("https://cdn.wallpapersafari.com/65/51/3QObE1.png") 50%;
+
+
+border: 15px solid rgba(255, 255, 255, 0.8);
+border-image: url("https://cdn.wallpapersafari.com/65/51/3QObE1.png")
+50%;
+
 border-color: #cccccc;
 border-spacing: 500px 100px;
+border-image-width: 50px;
+
+padding-left: 0.5%;
 
 font-size: 20px;
 font-family: 'Galada', cursive;
@@ -78,8 +86,8 @@ margin-top: 60px;
 margin-right: 15px;
 }
 div.main-element main p.caption span.caption-guts{
-margin-inline-start: 90.9%;
-font-size: 20px;
+margin-inline-start: 86%;
+font-size: 26px;
 }
 div.main-element-friends{
 font-size: 50px;
