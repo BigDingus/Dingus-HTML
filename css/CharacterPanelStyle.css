@@ -24,22 +24,21 @@ border: 4px double black;
 
 background-image: url('../img/page_background.jpg');
 background-repeat: repeat-x;
-background-position: center;
 background-clip: padding-box;
-background-position: -100% 35%;
+background-position: 75vmin -25vmax;
+position: relative;
+top: 0; left: 0;
+width: 100%; height: 100%;
 }
 
 div.header-element header {
 text-align: center;
-height: 0;
-padding-bottom: 56.25%; /* 16:9 */
 }
 
 div.header-element header p.js-credit {
 text-align: right;
 font-size: 15px;
 color: black;
-position: inherit;
 margin-block-start: 0.1%;  /* height of the block from the top */
 margin-block-end: 4%; /* height of the block from the bottom */
 margin-inline-end: 22.1%; /* pushed by set number of pixels from the right, in-line (end) */
@@ -58,8 +57,9 @@ padding: 0px;
 
 }
 
-div.header-element h1{
-font-size: 36px;
+div.header-element h1.js-name{
+font-size: 70px;
+
 
 }
 
@@ -76,7 +76,6 @@ border-color: black;
 
 div.main-element main h2 {
 font-size: 50px;
-font-weight: bold;
 padding-left: 10px;
 }
 
@@ -149,5 +148,8 @@ height: 75%;
 div.footer-element footer{
 font-family: cursive;
 font-size: 20px;
-margin-block-start: 400px;
+margin-left: 400px;
+height: 0;
+padding-bottom: 56.25%; /* 16:9 */
+position: relative;
 }
