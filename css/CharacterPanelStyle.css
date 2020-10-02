@@ -17,26 +17,34 @@ rgba(140,140,140,1) 100%);
 }
 h1, h2{
 font-family: fantasy, cursive;
-color: rgb(197, 197, 197);
+color: rgba(255, 136, 0, 0.39);
+text-shadow: 1px 1px rgba(133, 2, 2, 0.664);
+
+border: 4px double black;
 
 background-image: url('../img/page_background.jpg');
+background-repeat: repeat-x;
+background-position: center;
 background-clip: padding-box;
 background-position: -100% 35%;
 }
+
 div.header-element header {
 text-align: center;
 height: 0;
 padding-bottom: 56.25%; /* 16:9 */
-position: relative;
 }
+
 div.header-element header p.js-credit {
 text-align: right;
 font-size: 15px;
 color: black;
+position: inherit;
 margin-block-start: 0.1%;  /* height of the block from the top */
 margin-block-end: 4%; /* height of the block from the bottom */
 margin-inline-end: 22.1%; /* pushed by set number of pixels from the right, in-line (end) */
 }
+
 div.header-element header img.js-character-avatar{
 border: 4px solid;
 padding: 2px;
@@ -44,11 +52,12 @@ border-color: black;
 }
 
 div.header-element header img.js-logo{
-visibility: visible;
+
 border: hidden;
 padding: 0px;
 
 }
+
 div.header-element h1{
 font-size: 36px;
 
@@ -58,21 +67,24 @@ div.main-element main {
 text-align: left;
 display:inline-block;
 }
+
 div.main-element main img.js-berserker-armor{
 border: 4px solid;
 padding: 2px;
 border-color: black;
 }
+
 div.main-element main h2 {
 font-size: 50px;
 font-weight: bold;
-padding-left: 1px;
+padding-left: 10px;
 }
 
 div.main-element main p.description{
 font-family: serif;
 font-size: 26px;
 }
+
 div.main-element main p.caption{
 
 
@@ -92,38 +104,48 @@ float: right;
 margin-top: 60px;
 margin-right: 15px;
 }
+
 div.main-element main p.caption span.caption-guts{
 margin-inline-start: 86%;
 font-size: 26px;
 }
+
 div.main-element-friends h2{
 font-size: 50px;
-padding-left: 1px;
+padding-left: 10px;
 }
+
 div.main-element-friends ul{
-font-size: 36px;
+font-size: 60px;
+font-family: 'Galada', cursive;
 }
+
 div.main-element-friends span{
 margin-left: 5%;
-font-size: 30px;
+font-size: 26px;
 }
+
 div.main-element-friends img{
 border: 4px solid;
 padding: 2px;
 border-color: black;
 margin-left: 75%;
 }
+
 div.main-element-friends br{
 line-height: 130%;
 }
+
 div.main-element-friends img.casca{
 width: 400px;
 height: 75%;
 }
+
 div.main-element-friends img.rickert{
 width: 400px;
 height: 75%;
 }
+
 div.footer-element footer{
 font-family: cursive;
 font-size: 20px;
