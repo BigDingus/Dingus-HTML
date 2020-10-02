@@ -132,7 +132,8 @@ border: 4px solid;
 padding: 2px;
 border-color: black;
 margin-left: 75%;
-box-shadow: black;
+box-shadow: 6px 2px 21px -9px
+rgba(0,0,0,0.63);
 }
 
 div.main-element-friends br{
