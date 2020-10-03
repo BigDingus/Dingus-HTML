@@ -43,9 +43,9 @@ div.header-element header p.js-credit {
 text-align: right;
 font-size: 15px;
 color: black;
-margin-block-start: 0.1%;  /* height of the block from the top */
-margin-block-end: 4%; /* height of the block from the bottom */
-margin-inline-end: 22.1%; /* pushed by set number of pixels from the right, in-line (end) */
+text-align: right;
+position: relative;
+margin-right: 20vw;
 }
 
 div.header-element header img.js-character-avatar{
@@ -56,8 +56,14 @@ border-color: black;
 
 div.header-element header img.js-logo{
 
-border: hidden;
-padding: 0px;
+border: none;
+box-shadow: none;
+width: 40vw;
+min-width: 440px;
+max-width: 752px;
+height: 60vh;
+min-height: 171px;
+max-height: 208px;
 
 }
 
