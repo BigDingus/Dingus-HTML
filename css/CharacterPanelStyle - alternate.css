@@ -1,0 +1,66 @@
+* {
+box-sizing: border-box;
+}
+body {
+min-width: 700px;
+min-height: 200px;
+border: 50px solid rgba(255, 255, 255, 0.8);
+border-image: url("https://cdn.wallpapersafari.com/65/51/3QObE1.png") 50%;
+border-color: #cccccc;
+border-image-width: 125px;
+background: rgb(140,140,140);
+background: linear-gradient(
+    100deg,
+rgba(140,140,140,1) 0%,
+rgba(193,193,193,1) 8%,
+rgba(226,226,226,1) 40%,
+rgba(226,226,226,1) 60%,
+rgba(193,193,193,1) 92%,
+rgba(140,140,140,1) 100%);
+
+font-family: 'Galada', cursive;
+
+}
+h1, h2{
+font-family: fantasy, cursive;
+color: rgba(255, 136, 0, 0.39);
+text-shadow: 1px 1px rgba(133, 2, 2, 0.664);
+
+border: 4px double black;
+
+background-image: url('../img/page_background.jpg');
+background-repeat: repeat-x;
+background-clip: padding-box;
+background-position: 30vw -50vh;
+background-attachment: scroll;
+position: relative;
+top: 0; left: 0;
+width: 100%; height: 100%;
+}
+img{
+border: 2px solid black;
+box-shadow: 1px 1px black;
+}
+header{
+display: block;
+text-align: center;
+}
+.js-logo{
+border: none;
+box-shadow: none;
+width: 40vw;
+min-width: 440px;
+max-width: 752px;
+height: 60vh;
+min-height: 171px;
+max-height: 208px;
+}
+.js-credit{
+text-align: right;
+position: relative;
+margin-right: 20vw;
+
+}
+
+
+

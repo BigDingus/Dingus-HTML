@@ -35,11 +35,23 @@ top: 0; left: 0;
 width: 100%; height: 100%;
 }
 
-div.header-element header {
+header {
 text-align: center;
 }
 
-div.header-element header p.js-credit {
+header img.js-logo{
+
+border: none;
+box-shadow: none;
+width: 36vw;
+min-width: 440px;
+max-width: 752px;
+height: 60vh;
+min-height: 171px;
+max-height: 208px;
+}
+
+header p.js-credit {
 text-align: right;
 font-size: 15px;
 color: black;
@@ -48,53 +60,54 @@ position: relative;
 margin-right: 20vw;
 }
 
-div.header-element header img.js-character-avatar{
-border: 4px solid;
-padding: 2px;
-border-color: black;
-}
-
-div.header-element header img.js-logo{
-
-border: none;
-box-shadow: none;
-width: 40vw;
-min-width: 440px;
-max-width: 752px;
-height: 60vh;
-min-height: 171px;
-max-height: 208px;
-
-}
-
-div.header-element h1.js-name{
-font-size: 70px;
 
 
-}
 
-div.main-element main {
+main {
 text-align: left;
 display:inline-block;
 }
 
-div.main-element main img.js-berserker-armor{
+
+
+.js-name{
+font-size: 70px;
+text-align: center;
+}
+
+img.js-character-avatar{
 border: 4px solid;
 padding: 2px;
 border-color: black;
+width: 400px;
+height: 400px;
+margin-left: 36vw;
+margin-right: 36vw;
 }
 
-div.main-element main h2 {
+.js-character-avatar-alt{
+border: 4px solid;
+padding: 2px;
+border-color: black;
+width: 360px;
+height: 510px;
+float: right;
+margin-bottom: 10vh;
+}
+
+main h2 {
 font-size: 50px;
 padding-left: 10px;
 }
 
-div.main-element main p.description{
-font-family: serif;
+p.description{
+font-family: fantasy;
 font-size: 26px;
+margin-left: 1vw;
+text-indent: 4px;
 }
 
-div.main-element main p.caption{
+p.caption{
 
 
 border: 15px solid rgba(255, 255, 255, 0.8);
@@ -105,7 +118,7 @@ border-color: #cccccc;
 border-spacing: 500px 100px;
 border-image-width: 50px;
 
-padding-left: 0.5%;
+padding: 5px 5px 0px 5px;
 
 font-size: 20px;
 font-family: 'Galada', cursive;
@@ -114,9 +127,9 @@ margin-top: 60px;
 margin-right: 15px;
 }
 
-div.main-element main p.caption span.caption-guts{
-margin-inline-start: 86%;
-font-size: 26px;
+span.caption-span{
+margin-left: 27vw;
+font-size: 34px;
 }
 
 div.main-element-friends h2{
@@ -124,40 +137,45 @@ font-size: 50px;
 padding-left: 10px;
 }
 
-div.main-element-friends ul{
+div.main-element-friends li{
 font-size: 60px;
 font-family: 'Galada', cursive;
 }
 
 div.main-element-friends span{
-margin-left: 5%;
+margin-left: 5vw;
 font-size: 26px;
+font-family: fantasy, cursive;
 }
 
 div.main-element-friends img{
 border: 4px solid;
 padding: 2px;
 border-color: black;
-margin-left: 75%;
+margin-left: 60vw;
+margin-right: 5vw;
 box-shadow: 6px 2px 21px -9px
 rgba(0,0,0,0.63);
 }
 
 div.main-element-friends br{
-line-height: 130%;
+font-size: small;
 }
 
-div.main-element-friends img.casca{
+img.casca{
 width: 400px;
 height: 75%;
 }
 
-div.main-element-friends img.rickert{
+img.rickert{
 width: 400px;
 height: 75%;
 }
 
-div.footer-element footer{
+
+
+
+footer{
 font-family: cursive;
 font-size: 20px;
 margin-left: 400px;

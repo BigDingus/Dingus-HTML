@@ -1,0 +1,106 @@
+
+body{
+box-sizing: border-box;
+border: 50px solid rgba(255, 255, 255, 0.8);
+border-image: url("https://cdn.wallpapersafari.com/65/51/3QObE1.png") 50%;
+border-color: #cccccc;
+border-image-width: 125px;
+background: rgb(140,140,140);
+background: linear-gradient(
+100deg,
+rgba(140,140,140,1) 0%,
+rgba(193,193,193,1) 8%,
+rgba(226,226,226,1) 40%,
+rgba(226,226,226,1) 60%,
+rgba(193,193,193,1) 92%,
+rgba(140,140,140,1) 100%);
+
+
+}
+.character_buttons{
+display: flexbox;
+justify-content: space-around;
+}
+button{
+background-size: cover;
+background-position-x: center;
+}
+
+h1, h2, h3 {
+font-family: fantasy, cursive;
+font-size: 72px;
+text-align: center;
+color: rgba(255, 136, 0, 0.39);
+text-shadow: 1px 1px rgba(133, 2, 2, 0.664);
+
+border: 4px double black;
+
+background-image: url('../img/page_background.jpg');
+background-repeat: repeat-x;
+background-clip: padding-box;
+background-position: 30vw -50vh;
+background-attachment: scroll;
+position: relative;
+top: 0; left: 0;
+width: 100%; height: 100%;
+}
+.about_project h3{
+text-align: center;
+font-size: 48px;
+
+}
+.about_project p{
+font-size: 24px;
+font-family: cursive;
+margin-left: 1.5vw;
+margin-bottom: 6vh;
+}
+ul {
+font-size: 22px;
+font-family: cursive;
+list-style-type: upper-roman;
+margin-left: 1.8vw;
+}
+.js-logo{
+
+border: none;
+box-shadow: none;
+width: 36vw;
+min-width: 440px;
+max-width: 752px;
+height: 60vh;
+min-height: 171px;
+max-height: 208px;
+margin-left: 32vw;
+}
+
+.js-credit {
+text-align: right;
+font-size: 15px;
+color: black;
+text-align: right;
+position: relative;
+margin-right: 21vw;
+}
+
+
+.characters{
+margin-bottom: 30vh;
+}
+.button{
+width: 400px;
+height: 600px;
+text-align: end;
+font-size: 48px;
+color: rgba(255, 136, 0, 0.39);
+text-shadow: 1px 1px rgba(133, 2, 2, 0.664);
+font-family: fantasy, cursive;
+}
+footer{
+font-family: cursive;
+font-size: 20px;
+margin-left: 400px;
+margin-bottom: 5px;
+padding: 3px;
+position: relative;
+}
