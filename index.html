@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="max-width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Galada&display=swap" rel="stylesheet">
     <link href="css/IndexPageStyle.css" rel="stylesheet" type="text/css">
     <link rel="icon" href="img/Berserk.png">
@@ -14,9 +14,11 @@
 <body>
     <div class="header">
         <header>
-            <img src="img/Berserk.png" class="js-logo" alt="Berserk_logo">
-            <p class="js-credit">Made by Kentaro Miura&trade;.</p>
-        <br>
+            <div id="logo">
+                <img src="img/Berserk.png" id="js-logo" alt="Berserk_logo">
+                <h5 id="js-credit">Made by Kentaro Miura&trade;.</h5>
+            </div>
+            <br>
             <h1>Welcome, to the Berserk Project!</h1>
         </header>
     </div>
@@ -37,7 +39,7 @@
             </p>
     </div>
     <div class="characters">
-        <h2 style="margin-bottom: 10vh;">Characters</h2>
+        <h2 style="margin-bottom: 10%;">Characters</h2>
         <div class="character_buttons">
 
             <button type="button" title="To Guts' character panel" class="js-webpage-button-guts button" style="background-image: url(img/Berserk-Guts-Avatar.jpg);">
@@ -74,27 +76,27 @@
     <script>
         let gutsNode = document.querySelector(".js-webpage-button-guts")
         gutsNode.addEventListener('click', function(e){
-            open("https://bigdingus.github.io/Dingus-HTML/GutsCharacterPanel.html", self)
+            open("https://bigdingus.github.io/Dingus-HTML/GutsCharacterPanel.html", blank)
         })
         let cascaNode = document.querySelector(".js-webpage-button-casca")
         cascaNode.addEventListener('click', function(e){
-            open("https://bigdingus.github.io/Dingus-HTML/CascaCharacterPanel.html", self)
+            open("https://bigdingus.github.io/Dingus-HTML/CascaCharacterPanel.html", blank)
         })
         let puckNode = document.querySelector(".js-webpage-button-puck")
         puckNode.addEventListener('click', function(e){
-        open("https://bigdingus.github.io/Dingus-HTML/PuckCharacterPanel.html", self)
+        open("https://bigdingus.github.io/Dingus-HTML/PuckCharacterPanel.html", blank)
         })
         let rickertNode = document.querySelector(".js-webpage-button-rickert")
         rickertNode.addEventListener('click', function(e){
-        open("https://bigdingus.github.io/Dingus-HTML/RickertCharacterPanel", self)
+        open("https://bigdingus.github.io/Dingus-HTML/RickertCharacterPanel", blank)
         })
         let isidroNode = document.querySelector(".js-webpage-button-isidro")
         isidroNode.addEventListener('click', function(e){
-        open("https://bigdingus.github.io/Dingus-HTML/IsidroCharacterPanel.html", self)
+        open("https://bigdingus.github.io/Dingus-HTML/IsidroCharacterPanel.html", blank)
         })
         let schierkeNode = document.querySelector(".js-webpage-button-schierke")
         schierkeNode.addEventListener('click', function(e){
-        open("https://bigdingus.github.io/Dingus-HTML/SchierkeCharacterPanel.html", self)
+        open("https://bigdingus.github.io/Dingus-HTML/SchierkeCharacterPanel.html", blank)
         })
 
         
