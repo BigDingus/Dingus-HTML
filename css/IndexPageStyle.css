@@ -59,7 +59,7 @@ font-family: cursive;
 list-style-type: upper-roman;
 margin-left: 1.8vw;
 }
-#js-logo{
+.js-logo{
 
 border: none;
 box-shadow: none;
@@ -70,9 +70,10 @@ height: 60vh;
 min-height: 171px;
 max-height: 208px;
 margin-left: 32%;
+transition: 25ms all ease-in-out;
 }
 
-#js-credit {
+.js-credit {
 font-size: 15px;
 color: black;
 position: relative;
@@ -91,14 +92,34 @@ justify-content: space-around;
 }
 
 .button{
-width: 400px;
-height: 600px;
-text-align: end;
+width: 325px;
+height: 475px;
+text-align: center;
 font-size: 48px;
 color: rgba(255, 136, 0, 0.39);
 text-shadow: 1px 1px rgba(133, 2, 2, 0.664);
 font-family: fantasy, cursive;
+padding-top: 380px;
+padding-bottom: 0px;
+transition: 250ms all ease-in-out;
 }
+.button u{
+background: rgb(0 0 0 / 56%);
+padding: 0px 10%;
+}
+
+
+.mouseoverlogo{
+border: 2px inset black;
+background: #00000012;
+cursor: pointer;
+}
+
+.mouseoverbtn{
+border: 5.5px inset black;
+cursor: pointer;
+}
+
 footer{
 font-family: cursive;
 font-size: 20px;

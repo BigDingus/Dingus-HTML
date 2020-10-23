@@ -15,8 +15,8 @@
     <div class="header">
         <header>
             <div id="logo">
-                <img src="img/Berserk.png" id="js-logo" alt="Berserk_logo">
-                <h5 id="js-credit">Made by Kentaro Miura&trade;.</h5>
+                <img src="img/Berserk.png" class="js-logo" alt="Take me to the home page.">
+                <h5 class="js-credit">Made by Kentaro Miura&trade;.</h5>
             </div>
             <br>
             <h1>Welcome, to the Berserk Project!</h1>
@@ -39,31 +39,31 @@
             </p>
     </div>
     <div class="characters">
-        <h2 style="margin-bottom: 10%;">Characters</h2>
+        <h2 style="margin-bottom: 3%;">Characters</h2>
         <div class="character_buttons">
 
             <button type="button" title="To Guts' character panel" class="js-webpage-button-guts button" style="background-image: url(img/Berserk-Guts-Avatar.jpg);">
-            Guts
+            <u>Guts</u>
             </button>
 
             <button type="button" title="To Casca's character panel" class="js-webpage-button-casca button" style="background-image: url(img/Berserk-Casca-Avatar.jpg);">
-            Casca
+            <u>Casca</u>
             </button>
                         
             <button type="button" title="To Puck's character panel" class="js-webpage-button-puck button" style="background-image: url(img/Berserk-Puck-Avatar.jpg);">
-            Puck
+            <u>Puck</u>
             </button>
                         
             <button type="button" title="To Rickert's character panel" class="js-webpage-button-rickert button" style="background-image: url(img/Berserk-Rickert-Avatar.jpg);">
-            Rickert
+            <u>Rickert</u>
             </button>
                             
             <button type="button" title="To Isidro's character panel" class="js-webpage-button-isidro button" style="background-image: url(img/Berserk-Isidro-Avatar.jpg);">
-            Isidro
+            <u>Isidro</u>
             </button>
                         
             <button type="button" title="To Schierke's character panel" class="js-webpage-button-schierke button" style="background-image: url(img/Berserk-Schierke-Avatar.jpg);">
-            Schierke
+            <u>Schierke</u>
             </button>
         </div>
     </div>
@@ -74,6 +74,12 @@
         </footer>
     </div>
     <script>
+            // A hyperlink taking the user back to the home page
+        let homeNode = document.querySelector(".js-logo")
+        homeNode.addEventListener('click', function(e){
+            open("http://bigdingus.github.io/Dingus-HTML", self)
+        })
+            // Character buttons linking to their respective webpages
         let gutsNode = document.querySelector(".js-webpage-button-guts")
         gutsNode.addEventListener('click', function(e){
             open("https://bigdingus.github.io/Dingus-HTML/GutsCharacterPanel.html", self)
@@ -97,6 +103,57 @@
         let schierkeNode = document.querySelector(".js-webpage-button-schierke")
         schierkeNode.addEventListener('click', function(e){
         open("https://bigdingus.github.io/Dingus-HTML/SchierkeCharacterPanel.html", self)
+        })
+
+        // Mouseover event listeners
+        homeNode.addEventListener('mouseover', function(e){
+            homeNode.classList.add('mouseoverlogo')
+        })
+        homeNode.addEventListener('mouseout', function(e){
+            homeNode.classList.remove('mouseoverlogo')
+        })
+
+
+        gutsNode.addEventListener('mouseover', function(e){
+            gutsNode.classList.add('mouseoverbtn')
+        })
+        gutsNode.addEventListener('mouseout', function(e){
+            gutsNode.classList.remove('mouseoverbtn')
+        })
+
+        cascaNode.addEventListener('mouseover', function(e){
+            cascaNode.classList.add('mouseoverbtn')
+        })
+        cascaNode.addEventListener('mouseout', function(e){
+            cascaNode.classList.remove('mouseoverbtn')
+        })
+
+        puckNode.addEventListener('mouseover', function(e){
+            puckNode.classList.add('mouseoverbtn')
+        })
+        puckNode.addEventListener('mouseout', function(e){
+            puckNode.classList.remove('mouseoverbtn')
+        })
+
+        rickertNode.addEventListener('mouseover', function(e){
+            rickertNode.classList.add('mouseoverbtn')
+        })
+        rickertNode.addEventListener('mouseout', function(e){
+            rickertNode.classList.remove('mouseoverbtn')
+        })
+
+        isidroNode.addEventListener('mouseover', function(e){
+            isidroNode.classList.add('mouseoverbtn')
+        })
+        isidroNode.addEventListener('mouseout', function(e){
+            isidroNode.classList.remove('mouseoverbtn')
+        })
+
+        schierkeNode.addEventListener('mouseover', function(e){
+            schierkeNode.classList.add('mouseoverbtn')
+        })
+        schierkeNode.addEventListener('mouseout', function(e){
+            schierkeNode.classList.remove('mouseoverbtn')
         })
 
         

@@ -33,6 +33,7 @@ background-size: 85%;
 background-position: 32.7vw;
 background-attachment: scroll;
 position: relative;
+transition: 500ms all ease-in-out;
 }
 
 header {
@@ -49,6 +50,7 @@ max-width: 752px;
 height: 60vh;
 min-height: 171px;
 max-height: 208px;
+transition: 25ms all ease-in-out;
 }
 
 header p.js-credit {
@@ -172,6 +174,15 @@ width: 400px;
 height: 75%;
 }
 
+.mouseoverlogo{
+border: 2px;
+background: #00000012;
+cursor: pointer;
+}
+.mouseoverbtn{
+border: 5.5px inset black;
+cursor: pointer;
+}
 
 
 

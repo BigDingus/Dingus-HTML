@@ -69,5 +69,21 @@
                 </footer>
             </div>
 
+    <script>
+                    // A hyperlink taking the user back to the home page
+        let homeNode = document.querySelector("#js-logo")
+
+        homeNode.addEventListener('click', function(e){
+            open("http://bigdingus.github.io/Dingus-HTML", self)
+        })
+
+                    // Mouseover event listeners
+        homeNode.addEventListener('mouseover', function(e){
+            homeNode.classList.add('mouseover')
+        })
+        homeNode.addEventListener('mouseout', function(e){
+            homeNode.classList.remove('mouseover')
+        })
+    </script>
 </body>
 </html>
