@@ -4,19 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Galada&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="css/CharacterPanelStyle.css">
+    <link rel="stylesheet" type="text/css" id="js-css-stylesheet" href="css/CharacterPanelStyle - altered.css">
     <link rel="icon" href="img/Berserk.png">
     <title>Character Panel: Guts</title>
 </head>
 <body>
-
-        <!-- Guts  -->
-    <div class="header-element">
-        <header>
-            <img src="img/Berserk.png" class="js-logo" alt="Berserk_logo">
+            <!-- Navbar -->
+        <div class="navbar">
+            <div class="navbar-logo">
+                <img src="img/Berserk.png" class="js-logo" alt="Berserk_logo" title="Back to the homepage.">
                 <p class="js-credit">Made by Kentaro Miura&trade;.</p>
-            <br>
-            
+            </div>
+            <div class="navbar-dropdown">
+                <button type="button" class="dropdown-btn">
+                    Characters
+                </button>
+                <div class="burger-btn">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+                <div class="dropdown">
+                    <ul class="dropdown-contents">
+                        <li><a href="#">Guts</a></li>
+                        <li><a href="#">Casca</a></li>
+                        <li><a href="#">Puck</a></li>
+                        <li><a href="#">Rickert</a></li>
+                        <li><a href="#">Schierke</a></li>
+                        <li><a href="#">Isidro</a></li>
+                        <li><a href="#">Farnese</a></li>
+                        <li><a href="#">Serpico</a></li>
+                    </ul>
+                </div>
+            </div>
         </div>
         
         <!-- Guts' description -->
@@ -30,67 +50,150 @@
                     renowned as the "Black Swordsman", is a former mercenary and branded wanderer who travels the world in a constant
                     internal struggle between pursuing his own ends and protecting those dear to him.
                 </p>
-                <img src="img/Berserk-Guts-BerserkerArmorOn.jpg" class="js-character-avatar-alt" alt="Berserk-Guts-BerserkerArmorOn">
-                <p style="display: inline-block;" class="caption">
-                    "You’re right, we are mortal and fragile.<br> But even if we are tortured or wounded, we’ll fight to survive.<br>
-                    You should feel the pain we feel and understand.<br>
-                    I am the messenger that will deliver you to that pain and understanding.”<br>
+                <div>
+                    <img src="img/Berserk-Guts-BerserkerArmorOn.jpg" title="Guts donning the magically crafted Berserker armor." class="js-character-avatar-alt" alt="Berserk-Guts-BerserkerArmorOn">
+                    <p style="display: inline-block;" class="caption">
+                        "You’re right, we are mortal and fragile.<br> But even if we are tortured or wounded, we’ll fight to survive.<br>
+                        You should feel the pain we feel and understand.<br>
+                        I am the messenger that will deliver you to that pain and understanding.”<br> 
                         <span class="caption-span">-Guts</span></p>
+                </div>
             </main>
         </div>
 
 
         <!-- Friends element -->
-            <div class="main-element-friends">
-                <main>
-                    <h2>Friends:</h2>
-                    <ul>
-                        <li>Casca</li>
-                        <br><span> - Guts' romantic interest and longtime companion.</span>
-                                <img src="img/Berserk-Casca-Avatar.jpg" class="casca" title="Fanart of Casca, from before the Eclipse.">
-                        <li>Rickert</li>
-                            <br><span> - Tinkerer and a former brother-in-arms.</span>
-                                <img src="img/Berserk-Rickert-Avatar.jpg" class="rickert" title="Rickert at the hill of blades.">
-                        <li>Puck</li>
-                            <br><span> - Guts' sidekick.</span>
-                                <img src="img/Berserk-Puck-Avatar.jpg" title="Puck, the elf aka chestnut.">
-                        <li>Isidro</li>
-                            <br><span> - A young vagabond, following Guts in hopes of learning to fight like him.</span>
-                                <img src="img/Berserk-Isidro-Avatar.jpg" title="Isidro, back in the port city.">
-                        <li>Schierke</li>
-                            <br><span> - Witch and a port in the storm for Guts during combat.</span>
-                                <img src="img/Berserk-Schierke-Avatar.jpg" title="Schierke and her friend, Ivalera">
-                        <li>Serpico</li>
-                            <br><span> - Former Holy See, a loyal bodyguard to his, initially estranged, sister, Lady Farnese.</span>
-                                <img src="img/Berserk-Serpico-Avatar.jpg" title="Serpico, wielding the Sylph blade and cloak.">
-                        <li>Farnese</li>
-                            <br><span> - Former Holy See, now witch apprentice under Schierke.</span>
-                                <img src="img/Berserk-Farnese-Avatar.jpg" title="Farnese, taking care of indisposed Casca.">
-                            
-                    </ul>
-            </main>
-            </div>
-            <div class="footer_element">
-                <footer>
-                    <h5 style="text-align: end;">Webpage created for personal learning uses, using the characters of Berserk as a template<br>
-                        Made by: BigDingus&copy;</h5>
-                </footer>
-            </div>
+        <div class="main-element-friends">
+            <main>
+                <h2>Friends:</h2>
+                <ul>
+                    <li>Casca</li>
+                    <br><span> - Guts' romantic interest and longtime companion.</span>
+                    <img src="img/Berserk-Casca-Avatar.jpg" class="friends casca" title="Fanart of Casca, from before the Eclipse.">
+
+                    <li>Rickert</li>
+                        <br><span> - Tinkerer and a former brother-in-arms.</span>
+                    <img src="img/Berserk-Rickert-Avatar.jpg" class="friends rickert" title="Rickert at the hill of blades.">
+
+                    <li>Puck</li>
+                        <br><span> - Guts' sidekick.</span>
+                    <img src="img/Berserk-Puck-Avatar.jpg" class="friends puck" title="Puck, the elf aka chestnut.">
+
+                    <li>Isidro</li>
+                        <br><span> - A young vagabond, following Guts in hopes of learning to fight like him.</span>
+                    <img src="img/Berserk-Isidro-Avatar.jpg" class="friends isidro" title="Isidro, back in the port city.">
+
+                    <li>Schierke</li>
+                        <br><span> - Witch and a port in the storm for Guts during combat.</span>
+                    <img src="img/Berserk-Schierke-Avatar.jpg" class="friends schierke" title="Schierke and her friend, Ivalera">
+
+                    <li>Serpico</li>
+                        <br><span> - Former Holy See, a loyal bodyguard to his, initially estranged, sister, Lady Farnese.</span>
+                    <img src="img/Berserk-Serpico-Avatar.jpg" class="friends serpico" title="Serpico, wielding the Sylph blade and cloak.">
+
+                    <li>Farnese</li>
+                        <br><span> - Former Holy See, now witch apprentice under Schierke.</span>
+                    <img src="img/Berserk-Farnese-Avatar.jpg" class="friends farnese" title="Farnese, taking care of indisposed Casca.">
+
+                        
+                </ul>
+        </main>
+        </div>
+        <div class="footer_element">
+            <footer>
+                <h5 style="text-align: end;">Webpage created for personal learning uses, using the characters of Berserk as a template<br>
+                    Made by: BigDingus&copy;</h5>
+            </footer>
+        </div>
     <script>
                     // A hyperlink taking the user back to the home page
-        let homeNode = document.querySelector(".js-logo")
+        const cssStyle = document.getElementById("js-css-stylesheet")
+        const homeNode = document.querySelector(".js-logo")
+        const cascaNode = document.querySelector(".casca")
+        const rickertNode = document.querySelector(".rickert")
+        const puckNode = document.querySelector(".puck")
+        const isidroNode = document.querySelector(".isidro")
+        const schierkeNode = document.querySelector(".schierke")
+        const serpicoNode = document.querySelector(".serpico")
+        const farneseNode = document.querySelector(".farnese")
+        const charactersNode = document.querySelector(".dropdown-btn")
+        const dropdownContentsNode = document.querySelector(".dropdown-contents")
+        const burgerNode = document.querySelector(".burger-btn")
+        let clicked = false;
 
         homeNode.addEventListener('click', function(e){
             open("http://bigdingus.github.io/Dingus-HTML", self)
         })
 
-                    // Mouseover event listeners
-        homeNode.addEventListener('mouseover', function(e){
-            homeNode.classList.add('mouseover')
+        charactersNode.addEventListener('click', function(e){
+
+            if(clicked == false){
+                clicked = true;
+                dropdownContentsNode.style.visibility = "visible";
+            }
+            else {
+                clicked = false
+                dropdownContentsNode.style.visibility = "hidden";
+            }
         })
-        homeNode.addEventListener('mouseout', function(e){
-            homeNode.classList.remove('mouseover')
+
+        burgerNode.addEventListener('click', function(e){
+
+            if(clicked == false){
+                clicked = true;
+                dropdownContentsNode.style.visibility = "visible";
+            
+            }
+            else {
+                clicked = false
+                dropdownContentsNode.style.visibility = "hidden";
+            }
         })
+
+
+
+                    // Mousever event listeners for character avatars
+        // -- Casca --
+        cascaNode.addEventListener('click', function(e){
+            open("http://bigdingus.github.io/Dingus-HTML/CascaCharacterPanel.html", self)
+        })
+
+
+        // -- Puck --
+        puckNode.addEventListener('click', function(e){
+            open("http://bigdingus.github.io/Dingus-HTML/PuckCharacterPanel.html", self)
+        })
+
+        // -- Rickert --
+        rickertNode.addEventListener('click', function(e){
+            open("http://bigdingus.github.io/Dingus-HTML/RickertCharacterPanel.html", self)
+        })
+
+
+        // -- Isidro --
+        isidroNode.addEventListener('click', function(e){
+            open("http://bigdingus.github.io/Dingus-HTML/IsidroCharacterPanel.html", self)
+        })
+
+        // -- Schierke --
+        schierkeNode.addEventListener('click', function(e){
+            open("http://bigdingus.github.io/Dingus-HTML/SchierkeCharacterPanel.html", self)
+        })
+
+
+        // -- Serpico --
+        serpicoNode.addEventListener('click', function(e){
+            open("http://bigdingus.github.io/Dingus-HTML/SerpicoCharacterPanel.html", self)
+        })
+
+
+        // -- Farnese --
+
+
+        farneseNode.addEventListener('click', function(e){
+            open("http://bigdingus.github.io/Dingus-HTML/FarneseCharacterPanel.html", self)
+        })
+
     </script>
 </body>
 </html>

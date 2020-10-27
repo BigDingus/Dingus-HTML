@@ -44,10 +44,10 @@ header img.js-logo{
 
 border: none;
 box-shadow: none;
-width: 36vw;
+width: 36%;
 min-width: 440px;
 max-width: 752px;
-height: 60vh;
+height: 30%;
 min-height: 171px;
 max-height: 208px;
 transition: 25ms all ease-in-out;
@@ -83,8 +83,8 @@ padding: 2px;
 border-color: black;
 width: 400px;
 height: 400px;
-margin-left: 36vw;
-margin-right: 36vw;
+margin-left: 42%;
+margin-right: 42%;
 }
 
 .js-character-avatar-alt{
@@ -133,24 +133,30 @@ span.caption-span{
 margin-left: 27vw;
 font-size: 34px;
 }
+.main-element-friends,
+.main-element,
+.header-element,
+.footer_element{
+width: 100%;
+}
 
-div.main-element-friends h2{
+.main-element-friends h2{
 font-size: 50px;
 padding-left: 10px;
 }
 
-div.main-element-friends li{
+.main-element-friends li{
 font-size: 60px;
 font-family: 'Galada', cursive;
 }
 
-div.main-element-friends span{
+.main-element-friends span{
 margin-left: 5vw;
 font-size: 26px;
 font-family: fantasy, cursive;
 }
 
-div.main-element-friends img{
+.main-element-friends img{
 border: 4px solid;
 padding: 2px;
 border-color: black;
@@ -160,11 +166,11 @@ box-shadow: 6px 2px 21px -9px
 rgba(0,0,0,0.63);
 }
 
-div.main-element-friends br{
-font-size: small;
+img{
+width: 400px;
+height: 75%;
 }
-
-img.casca{
+/* img.casca{
 width: 400px;
 height: 75%;
 }
@@ -172,15 +178,14 @@ height: 75%;
 img.rickert{
 width: 400px;
 height: 75%;
-}
+} */
 
 .mouseoverlogo{
-border: 2px;
 background: #00000012;
 cursor: pointer;
 }
 .mouseoverbtn{
-border: 5.5px inset black;
+border: 7px inset black;
 cursor: pointer;
 }
 
