@@ -13,12 +13,37 @@
 <!-- Buttons, linking the user to their respective webpages -->
 <body>
     <div class="header">
-        <header>
-            <div id="logo">
-                <img src="img/Berserk.png" class="js-logo" alt="Take me to the home page.">
-                <h5 class="js-credit">Made by Kentaro Miura&trade;.</h5>
+        <!-- Navbar -->
+        <div class="navbar">
+            <div class="navbar-logo">
+                <img src="img/Berserk.png" class="js-logo" alt="Berserk_logo" title="Back to the homepage.">
+                <p class="js-credit">Made by Kentaro Miura&trade;.</p>
             </div>
-            <br>
+            <div class="navbar-dropdown">
+                <button type="button" class="dropdown-btn">
+                    Characters
+                </button>
+                <div class="burger-btn">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+                <div class="dropdown">
+                    <ul class="dropdown-contents">
+                        <li><a href="http://bigdingus.github.io/Dingus-HTML/GutsCharacterPanel.html">Guts</a></li>
+                        <li><a href="http://bigdingus.github.io/Dingus-HTML/CascaCharacterPanel.html">Casca</a></li>
+                        <li><a href="http://bigdingus.github.io/Dingus-HTML/PuckCharacterPanel.html">Puck</a></li>
+                        <li><a href="http://bigdingus.github.io/Dingus-HTML/RickertCharacterPanel.html">Rickert</a></li>
+                        <li><a href="http://bigdingus.github.io/Dingus-HTML/SchierkeCharacterPanel.html">Schierke</a></li>
+                        <li><a href="http://bigdingus.github.io/Dingus-HTML/IsidroCharacterPanel.html">Isidro</a></li>
+                        <li><a href="http://bigdingus.github.io/Dingus-HTML/FarneseCharacterPanel.html">Farnese</a></li>
+                        <li><a href="http://bigdingus.github.io/Dingus-HTML/SerpicoCharacterPanel.html">Serpico</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <header>
             <h1>Welcome, to the Berserk Project!</h1>
         </header>
     </div>
@@ -26,7 +51,8 @@
         <h3>About Berserk</h3>
             <p>
                 Berserk is a long running, widely popular manga series, by the manga author Kentaro Miura.<br>
-                The series is split into arcs such as: </p><ul>
+                The series is split into arcs such as: </p>
+                <ul>
                     <li>The introductory arc - Black Swordsman</li>
                     <li>Retrospective arc, giving more context to the world and its characters - the Golden Age</li>
                     <li>Continuation of the story, from where Black Swordsman ended - Conviction arc</li>
@@ -38,33 +64,48 @@
                 Berserk's story is a dark, medieval fantasy, in both its setting and themes.
             </p>
     </div>
-    <div class="characters">
-        <h2 style="margin-bottom: 3%;">Characters</h2>
-        <div class="character_buttons">
+    <div class="friend-characters">
+        <h3>Friends:</h3>
+        <div class="characters">
+            <div class="character">
+                <img src="../Dingus-HTML/img/Berserk-Guts-Avatar.jpg" class="guts">
+                <h4>Guts</h4>
+            </div>
 
-            <button type="button" title="To Guts' character panel" class="js-webpage-button-guts button" style="background-image: url(img/Berserk-Guts-Avatar.jpg);">
-            <u>Guts</u>
-            </button>
+            <div class="character">
+                <img src="../Dingus-HTML/img/Berserk-Casca-Avatar.jpg" class="casca">
+                <h4>Casca</h4>
+            </div>
 
-            <button type="button" title="To Casca's character panel" class="js-webpage-button-casca button" style="background-image: url(img/Berserk-Casca-Avatar.jpg);">
-            <u>Casca</u>
-            </button>
-                        
-            <button type="button" title="To Puck's character panel" class="js-webpage-button-puck button" style="background-image: url(img/Berserk-Puck-Avatar.jpg);">
-            <u>Puck</u>
-            </button>
-                        
-            <button type="button" title="To Rickert's character panel" class="js-webpage-button-rickert button" style="background-image: url(img/Berserk-Rickert-Avatar.jpg);">
-            <u>Rickert</u>
-            </button>
-                            
-            <button type="button" title="To Isidro's character panel" class="js-webpage-button-isidro button" style="background-image: url(img/Berserk-Isidro-Avatar.jpg);">
-            <u>Isidro</u>
-            </button>
-                        
-            <button type="button" title="To Schierke's character panel" class="js-webpage-button-schierke button" style="background-image: url(img/Berserk-Schierke-Avatar.jpg);">
-            <u>Schierke</u>
-            </button>
+            <div class="character">
+                <img src="../Dingus-HTML/img/Berserk-Rickert-Avatar.jpg" class="rickert">
+                <h4>Rickert</h4>
+            </div>
+
+            <div class="character">
+                <img src="../Dingus-HTML/img/Berserk-Puck-Avatar.jpg" class="puck">
+                <h4>Puck</h4>
+            </div>
+
+            <div class="character">
+                <img src="../Dingus-HTML/img/Berserk-Schierke-Avatar.jpg" class="schierke">
+                <h4>Schierke</h4>
+            </div>
+
+            <div class="character">
+                <img src="../Dingus-HTML/img/Berserk-Isidro-Avatar.jpg" class="isidro">
+                <h4>Isidro</h4>
+            </div>
+
+            <div class="character">
+                <img src="../Dingus-HTML/img/Berserk-Farnese-Avatar-Alt.png" class="farnese">
+                <h4>Farnese</h4>
+            </div>
+
+            <div class="character">
+                <img src="../Dingus-HTML/img/Berserk-Serpico-Avatar-alt.jpg" class="serpico">
+                <h4>Serpico</h4>
+            </div>
         </div>
     </div>
     <div class="footer_element">
@@ -74,90 +115,97 @@
         </footer>
     </div>
     <script>
-            // A hyperlink taking the user back to the home page
-        let homeNode = document.querySelector(".js-logo")
+        
+        const homeNode = document.querySelector(".js-logo")
+        const gutsNode = document.querySelector(".guts")
+        const cascaNode = document.querySelector(".casca")
+        const rickertNode = document.querySelector(".rickert")
+        const puckNode = document.querySelector(".puck")
+        const isidroNode = document.querySelector(".isidro")
+        const schierkeNode = document.querySelector(".schierke")
+        const serpicoNode = document.querySelector(".serpico")
+        const farneseNode = document.querySelector(".farnese")
+
+        
+        const charactersNode = document.querySelector(".dropdown-btn")
+        const dropdownContentsNode = document.querySelector(".dropdown-contents")
+        const burgerNode = document.querySelector(".burger-btn")
+        let clicked = false;
+
         homeNode.addEventListener('click', function(e){
             open("http://bigdingus.github.io/Dingus-HTML", self)
         })
-            // Character buttons linking to their respective webpages
-        let gutsNode = document.querySelector(".js-webpage-button-guts")
+
+        charactersNode.addEventListener('click', function(e){
+
+            if(clicked == false){
+                clicked = true;
+                dropdownContentsNode.style.display = "flex";
+            }
+            else {
+                clicked = false
+                dropdownContentsNode.style.display = "none";
+            }
+        })
+
+        burgerNode.addEventListener('click', function(e){
+
+            if(clicked == false){
+                clicked = true;
+                dropdownContentsNode.style.display = "flex";
+            
+            }
+            else {
+                clicked = false
+                dropdownContentsNode.style.display = "none";
+            }
+        })
+
+
+
+                    // Secondary links to the character's respective Character Panel
+        // -- Guts --
         gutsNode.addEventListener('click', function(e){
-            open("https://bigdingus.github.io/Dingus-HTML/GutsCharacterPanel.html", self)
+            open("http://bigdingus.github.io/Dingus-HTML/GutsCharacterPanel.html", self)
         })
-        let cascaNode = document.querySelector(".js-webpage-button-casca")
+
+        // -- Casca --
         cascaNode.addEventListener('click', function(e){
-            open("https://bigdingus.github.io/Dingus-HTML/CascaCharacterPanel.html", self)
+            open("http://bigdingus.github.io/Dingus-HTML/CascaCharacterPanel.html", self)
         })
-        let puckNode = document.querySelector(".js-webpage-button-puck")
+
+        // -- Puck --
         puckNode.addEventListener('click', function(e){
-        open("https://bigdingus.github.io/Dingus-HTML/PuckCharacterPanel.html", self)
+            open("http://bigdingus.github.io/Dingus-HTML/PuckCharacterPanel.html", self)
         })
-        let rickertNode = document.querySelector(".js-webpage-button-rickert")
+
+        // -- Rickert --
         rickertNode.addEventListener('click', function(e){
-        open("https://bigdingus.github.io/Dingus-HTML/RickertCharacterPanel", self)
+            open("http://bigdingus.github.io/Dingus-HTML/RickertCharacterPanel.html", self)
         })
-        let isidroNode = document.querySelector(".js-webpage-button-isidro")
+
+
+        // -- Isidro --
         isidroNode.addEventListener('click', function(e){
-        open("https://bigdingus.github.io/Dingus-HTML/IsidroCharacterPanel.html", self)
+            open("http://bigdingus.github.io/Dingus-HTML/IsidroCharacterPanel.html", self)
         })
-        let schierkeNode = document.querySelector(".js-webpage-button-schierke")
+
+        // -- Schierke --
         schierkeNode.addEventListener('click', function(e){
-        open("https://bigdingus.github.io/Dingus-HTML/SchierkeCharacterPanel.html", self)
-        })
-
-        // Mouseover event listeners
-        homeNode.addEventListener('mouseover', function(e){
-            homeNode.classList.add('mouseoverlogo')
-        })
-        homeNode.addEventListener('mouseout', function(e){
-            homeNode.classList.remove('mouseoverlogo')
+            open("http://bigdingus.github.io/Dingus-HTML/SchierkeCharacterPanel.html", self)
         })
 
 
-        gutsNode.addEventListener('mouseover', function(e){
-            gutsNode.classList.add('mouseoverbtn')
-        })
-        gutsNode.addEventListener('mouseout', function(e){
-            gutsNode.classList.remove('mouseoverbtn')
+        // -- Serpico --
+        serpicoNode.addEventListener('click', function(e){
+            open("http://bigdingus.github.io/Dingus-HTML/SerpicoCharacterPanel.html", self)
         })
 
-        cascaNode.addEventListener('mouseover', function(e){
-            cascaNode.classList.add('mouseoverbtn')
-        })
-        cascaNode.addEventListener('mouseout', function(e){
-            cascaNode.classList.remove('mouseoverbtn')
-        })
 
-        puckNode.addEventListener('mouseover', function(e){
-            puckNode.classList.add('mouseoverbtn')
+        // -- Farnese --
+        farneseNode.addEventListener('click', function(e){
+            open("http://bigdingus.github.io/Dingus-HTML/FarneseCharacterPanel.html", self)
         })
-        puckNode.addEventListener('mouseout', function(e){
-            puckNode.classList.remove('mouseoverbtn')
-        })
-
-        rickertNode.addEventListener('mouseover', function(e){
-            rickertNode.classList.add('mouseoverbtn')
-        })
-        rickertNode.addEventListener('mouseout', function(e){
-            rickertNode.classList.remove('mouseoverbtn')
-        })
-
-        isidroNode.addEventListener('mouseover', function(e){
-            isidroNode.classList.add('mouseoverbtn')
-        })
-        isidroNode.addEventListener('mouseout', function(e){
-            isidroNode.classList.remove('mouseoverbtn')
-        })
-
-        schierkeNode.addEventListener('mouseover', function(e){
-            schierkeNode.classList.add('mouseoverbtn')
-        })
-        schierkeNode.addEventListener('mouseout', function(e){
-            schierkeNode.classList.remove('mouseoverbtn')
-        })
-
-        
-
 
     </script>
 </body>
