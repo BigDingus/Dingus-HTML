@@ -3,14 +3,15 @@ box-sizing: border-box;
 }
 body {
 margin: 0;
+
 padding: 0;
 border: 50px solid rgba(255, 255, 255, 0.8);
 border-image: url("https://cdn.wallpapersafari.com/65/51/3QObE1.png") 50%;
 border-color: #cccccc;
-border-image-width: 125px;
+border-image-width: 120px;
 background: rgb(140,140,140);
 background: linear-gradient(
-    100deg,
+100deg,
 rgba(140,140,140,1) 0%,
 rgba(193,193,193,1) 8%,
 rgba(226,226,226,1) 40%,
@@ -34,6 +35,7 @@ color: rgba(255, 136, 0, 0.39);
 text-shadow: 1px 1px rgba(133, 2, 2, 0.664);
 
 border: 4px double black;
+border-radius: 10px;
 
 background: url('../img/page_background.jpg') no-repeat rgb(0, 0, 0);
 /* background-image: url('../img/page_background.jpg'); */
@@ -41,7 +43,6 @@ background-clip: padding-box;
 background-size: 50%;
 background-position: 100%;
 background-attachment: scroll;
-transition: 500ms all ease-in-out;
 }
 
 /* Navbar -- START */
@@ -52,7 +53,6 @@ position: -webkit-sticky;
 position: sticky;
 top: 0;
 z-index: 999;
-width: 100%;
 height: 110px;
 padding: 15px 5px 15px 5px;
 
@@ -74,6 +74,7 @@ border: 2px solid black;
 border-radius: 5px;
 }
 
+
 /* Dropdown menu  -- START */
 .dropdown-btn{
 display: block;
@@ -91,8 +92,9 @@ border: 2px solid black;
 .burger-btn{
 display: none;
 }
-.dropdown ul{
-visibility: hidden;
+.dropdown-contents{
+display: none;
+flex-direction: column;
 padding: 10px 0px 10px 0px;
 text-align: center;
 justify-content: space-around;
@@ -133,20 +135,6 @@ background-color: white;
 border-radius: 10px;
 }
 
-/* for mobile devices -- START */
-@media (max-width: 800px){
-    .dropdown-btn{
-        display: none;
-    }
-    .burger-btn{
-        display: flex;
-    }
-    .dropdown-contents{
-        position: relative;
-        top: 4.8rem;
-    }
-/* for mobile devices -- END */
-}
 
 /* Dropdown menu -- END */
 
@@ -166,21 +154,167 @@ color: white;
 }
 /* Navbar -- END */
 
+/* Main -- START */
+
+.character-avatar{
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+.js-character-avatar{
+width: 400px;
+height: 400px;
+border: 4px solid black;
+}
+
+.description{
+font-size: 26px;
+text-indent: 10px;
+font-family: Galada, cursive;
+padding: 5px 10px 10px 10px;
+margin-bottom: 50px;
+}
+.quote{
+display: flex;
+flex-direction: row;
+justify-content: flex-end;
+}
+.caption{
+border: 10px solid rgba(255, 255, 255, 0.8);
+border-image: url(https://cdn.wallpapersafari.com/65/51/3QObE1.png) 50%;
+border-color: #cccccc;
+border-image-width: 125px;
+
+height: fit-content;
+
+position: relative;
+
+top: 0;
+right: 1%;
+margin: 0;
+padding: 40px 20px 20px 40px;
+font-size: 20px;
+font-family: Galada, cursive;
+}
+.caption span{
+padding: 0px 0px 0px 40px;
+font-size: 26px;
+font-family: Galada, cursive;
+text-decoration: underline;
+
+}
+/* In Rickert's character panel */
+.caption span.caption-span-two{
+padding: 5px;
+font-size: 22px;
+text-decoration: none;
+}
+
+.js-character-avatar-alt{
+width: 250px;
+height: 375px;
+border: 4px solid black;
+}
+
+
+/* Main -- END */
+
 /* Friends -- Start */
+
+.main-element-friends{
+width: 100%;
+}
 .main-element-friends h2{
 text-align: left;
 padding: 2px 2px 2px 20px
 }
-.friends{
-border: 4px solid black;
+
+.main-element-friends ul{
+list-style-type: none;
 }
-.friends:hover{
+
+.friend-character{
+clear: right;
+}
+.friend-text{
+display: flex;
+flex-direction: column;
+}
+
+.friend-text h4{
+list-style: none;
+font-family: Galada, cursive;
+font-size: 46px;
+margin-bottom: 5px;
+
+}
+
+.friend-text span{
+font-family: Galada, cursive;
+font-size: 24px;
+}
+
+.friend-image{
+border: 4px solid black;
+float: right;
+}
+.friend-image:hover{
 border: 7px inset black;
 cursor: pointer;
 }
 /* Friends -- End */
 
 
+
+
+/* Footer -- START */
+
+.footer-element h5{
+clear: right;
+text-align: end;
+color: black;
+padding-top: 50px;
+}
+
+/* Footer -- END */
+
+/* for mobile devices -- START */
+@media (max-width: 800px){
+    .dropdown-btn{
+    display: none;
+    }
+
+    .burger-btn{
+    display: flex;
+    }
+
+    .dropdown-contents{
+    position: relative;
+    top: 4.8rem;
+    }
+
+    .quote{
+    flex-direction: column-reverse;
+    }
+
+    .description{
+    margin-bottom: 20px;
+    }
+
+    .js-character-avatar-alt{
+    align-self: center;
+    margin-bottom: 10px;
+    }
+    
+    .friend-image{
+    transform: scale(0.75);
+    float: none;
+    }
+
+    
+}
+/* for mobile devices -- END */
 
 
 
@@ -196,5 +330,5 @@ cursor: pointer;
 border: 7px inset black;
 cursor: pointer;
 } 
- --- deprecated ---
- */
+--- deprecated ---
+*/

@@ -4,85 +4,233 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Galada&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="css/CharacterPanelStyle.css">
+    <link rel="stylesheet" type="text/css" id="js-css-stylesheet" href="css/CharacterPanelStyle - altered.css">
     <link rel="icon" href="img/Berserk.png">
     <title>Character Panel: Isidro</title>
 </head>
 <body>
-
-        <!-- Isidro  -->
-    <div class="header-element">
-        <header>
-            <img src="img/Berserk.png" class="js-logo" alt="Berserk_logo">
+            <!-- Navbar -->
+        <div class="navbar">
+            <div class="navbar-logo">
+                <img src="img/Berserk.png" class="js-logo" alt="Berserk_logo" title="Back to the homepage.">
                 <p class="js-credit">Made by Kentaro Miura&trade;.</p>
-            <br>
-            
+            </div>
+            <div class="navbar-dropdown">
+                <button type="button" class="dropdown-btn">
+                    Characters
+                </button>
+                <div class="burger-btn">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+                <div class="dropdown">
+                    <ul class="dropdown-contents">
+                        <li><a href="http://bigdingus.github.io/Dingus-HTML/GutsCharacterPanel.html">Guts</a></li>
+                        <li><a href="http://bigdingus.github.io/Dingus-HTML/CascaCharacterPanel.html">Casca</a></li>
+                        <li><a href="http://bigdingus.github.io/Dingus-HTML/PuckCharacterPanel.html">Puck</a></li>
+                        <li><a href="http://bigdingus.github.io/Dingus-HTML/RickertCharacterPanel.html">Rickert</a></li>
+                        <li><a href="http://bigdingus.github.io/Dingus-HTML/SchierkeCharacterPanel.html">Schierke</a></li>
+                        <li><a href="http://bigdingus.github.io/Dingus-HTML/IsidroCharacterPanel.html">Isidro</a></li>
+                        <li><a href="http://bigdingus.github.io/Dingus-HTML/FarneseCharacterPanel.html">Farnese</a></li>
+                        <li><a href="http://bigdingus.github.io/Dingus-HTML/SerpicoCharacterPanel.html">Serpico</a></li>
+                    </ul>
+                </div>
+            </div>
         </div>
         
         <!-- Isidro's description -->
         <div class="main-element">
             <main>
                 <h1 class="js-name">Isidro</h1>
-                <img src="img/Berserk-Isidro-Avatar.jpg" class="js-character-avatar"
-                alt="Berserk-Isidro-Avatar.jpg">
+                <div class="character-avatar">
+                    <img src="img/Berserk-Isidro-Avatar.jpg" class="js-character-avatar"
+                    alt="Berserk-Isidro-Avatar.jpg">
+                </div>
                 <h2>About Isidro:</h2>
                 <p class="description">
-                    A young rascal, who the group has run into on their quest to save Casca. He's a self-interested, arrogant, but resourceful aswell,<br>
+                    A young rascal, who the group has run into on their quest to save Casca. He's a self-interested, arrogant, but resourceful aswell,
                      and has helped the group many times over their journey.
-                </p>
-                <img src="img/Berserk-Isidro-Avatar-Alt.png" class="js-character-avatar-alt" alt="Berserk-Isidro-Avatar-Alt.png" style="width: initial; height: initial;">
-                <p style="display: none;" class="caption">
-                    "”<br>
-                        <span class="caption-span"></span></p>
+                <div class="quote">
+                    <p class="caption" style="display: none">
+                        "caption"<br>
+                        <span class="caption-span" style="display: none">-Character</span></p>
+                    <img src="img/Berserk-Isidro-Avatar-Alt.png" title="Isidro on the group's naval journey to Elfheim." style="width: 338px"
+                    class="js-character-avatar-alt" alt="Berserk-Isidro-Avatar-Alt.png">
+                </div>
             </main>
         </div>
 
 
         <!-- Friends element -->
-            <div class="main-element-friends">
-                <main>
-                    <h2>Friends:</h2>
-                    <ul>
-                        <li>Guts</li>
-                        <br><span>- former unit commander of the Band of the Hawk and a role model to Isidro.</span>
-                            <img src="img/Berserk-Guts-Avatar.jpg" class="guts" title="Post-eclipse picture of Guts." style="width: 400px; height: 400px">
-                        <li>Puck</li>
-                            <br><span> - Guts' sidekick.</span>
-                        <li>Schierke</li>
-                            <br><span> - Witch and the group's source for knowledge regarding the arcane.</span>
-                                <img src="img/Berserk-Schierke-Avatar.jpg" title="Schierke and her friend, Ivalera">
-                        <li>Serpico</li>
-                            <br><span> - Former Holy See, a loyal bodyguard to his, initially estranged, sister, Lady Farnese.</span>
-                                <img src="img/Berserk-Serpico-Avatar.jpg" title="Serpico, wielding the Sylph blade and cloak.">
-                        <li>Farnese</li>
-                            <br><span> - Former Holy See, now witch apprentice under Schierke.</span>
-                                <img src="img/Berserk-Farnese-Avatar.jpg" title="Farnese, taking care of indisposed Casca.">
+        <div class="main-element-friends">
+            <main>
+                <h2>Friends:</h2>
+                <ul>
+                    <!-- GUTS -->
+                    <li><div class="friend-character">
+                            <div class="friend-text">
+                                <h4>Guts</h4>
+                                <br>
+                                <span> - former unit commander of the Band of the Hawk and a role model for Isidro.</span>
+                            </div>
                             
-                    </ul>
-            </main>
-            </div>
-            <div class="footer_element">
-                <footer>
-                    <h5 style="text-align: end;">Webpage created for personal learning uses, using the characters of Berserk as a template<br>
-                        Made by: BigDingus&copy;</h5>
-                </footer>
-            </div>
+                            <img src="img/Berserk-Guts-Avatar.jpg" class="friend-image guts" style="width: 400px;" title="Guts, the Black Swordsman.">
+                        
+                        </div>
+                    </li>
 
+                    <!-- CASCA -->
+                    <li><div class="friend-character">
+                            <div class="friend-text">
+                                <h4>Casca</h4>
+                                <br>
+                                <span> - Former, second unit commander of the Band of the Hawk, who's helped by Schierke and the rest of the group recover her memory and in doing so, her old self.</span>
+                            </div>
+                            
+                            <img src="img/Berserk-Casca-Avatar.jpg" class="friend-image casca" style="width: 400px;" title="Fanart of Casca, from before the Eclipse.">
+                        
+                        </div>
+                    </li>
+
+                    <!-- PUCK -->
+                    <li><div class="friend-character">
+                            <div class="friend-text">
+                                <h4>Puck</h4>
+                                <br>
+                                <span> - Guts' sidekick. Very little is known about Puck, other than him being from Elfheim.</span>
+                            </div>
+                        
+                            <img src="img/Berserk-Puck-Avatar.jpg" class="friend-image puck" style="width: 400px;" title="Puck, the elf aka chestnut.">
+                    
+                        </div>
+                    </li>
+                
+                    <!-- SCHIERKE -->
+                    <li><div class="friend-character">
+                            <div class="friend-text">
+                                <h4>Schierke</h4>
+                                <br>
+                                <span> - Witch and a port in the storm for Guts during combat. A former witch-in-training, now fully recognized as a 
+                                    witch before her master's passing.
+                                        Now she's taken Farnese under her wing and provides information about magic to the group.</span>
+                            </div>
+
+                        
+                            <img src="img/Berserk-Schierke-Avatar.jpg" class="friend-image schierke" title="Schierke and her friend, Ivalera">
+
+                        </div>
+                    </li>
+                
+                <!-- SERPICO -->
+                <li><div class="friend-character">
+                        <div class="friend-text">
+                            <h4>Serpico</h4>
+                            <br>
+                            <span> - Former Holy See, a loyal bodyguard to his, initially estranged sister, Lady Farnese.</span>
+                        </div>
+                    
+                            <img src="img/Berserk-Serpico-Avatar.jpg" class="friend-image serpico" title="Serpico, wielding the Sylph blade and cloak.">
+                            
+                    </div>
+                </li>
+
+                <!-- FARNESE -->
+                <li><div class="friend-character">
+                        <div class="friend-text">
+                            <h4>Farnese</h4>
+                            <br>
+                            <span> - Former Holy See, now witch apprentice under Schierke.</span>
+                        </div>
+                            
+                            <img src="img/Berserk-Farnese-Avatar.jpg" class="friend-image farnese" title="Farnese, taking care of indisposed Casca.">
+                            
+                    </div>
+                </li>
+
+                </ul>
+        </main>
+        </div>
+        <div class="footer-element">
+            <footer>
+                <h5>Webpage created for personal learning uses, using the characters of Berserk as a template<br>
+                    Made by: BigDingus&copy;</h5>
+            </footer>
+        </div>
     <script>
                     // A hyperlink taking the user back to the home page
-        let homeNode = document.querySelector("#js-logo")
+        const homeNode = document.querySelector(".js-logo")
+        const gutsNode = document.querySelector(".guts")
+        const cascaNode = document.querySelector(".casca")
+        const puckNode = document.querySelector(".puck")
+        const schierkeNode = document.querySelector(".schierke")
+        const serpicoNode = document.querySelector(".serpico")
+        const farneseNode = document.querySelector(".farnese")
+
+        
+        const charactersNode = document.querySelector(".dropdown-btn")
+        const dropdownContentsNode = document.querySelector(".dropdown-contents")
+        const burgerNode = document.querySelector(".burger-btn")
+        let clicked = false;
 
         homeNode.addEventListener('click', function(e){
             open("http://bigdingus.github.io/Dingus-HTML", self)
         })
 
-                    // Mouseover event listeners
-        homeNode.addEventListener('mouseover', function(e){
-            homeNode.classList.add('mouseover')
+        charactersNode.addEventListener('click', function(e){
+
+            if(clicked == false){
+                clicked = true;
+                dropdownContentsNode.style.display = "flex";
+            }
+            else {
+                clicked = false
+                dropdownContentsNode.style.display = "none";
+            }
         })
-        homeNode.addEventListener('mouseout', function(e){
-            homeNode.classList.remove('mouseover')
+
+        burgerNode.addEventListener('click', function(e){
+
+            if(clicked == false){
+                clicked = true;
+                dropdownContentsNode.style.display = "flex";
+            
+            }
+            else {
+                clicked = false
+                dropdownContentsNode.style.display = "none";
+            }
         })
+
+                // -- Guts --
+            gutsNode.addEventListener('click', function(e){
+                open("http://bigdingus.github.io/Dingus-HTML/GutsCharacterPanel.html", self)
+            })
+
+                // -- Casca --
+            cascaNode.addEventListener('click', function(e){
+            open("http://bigdingus.github.io/Dingus-HTML/CascaCharacterPanel.html", self)
+            })
+
+                // -- Puck --
+            puckNode.addEventListener('click', function(e){
+                open("http://bigdingus.github.io/Dingus-HTML/PuckCharacterPanel.html", self)
+            })
+            
+                // -- Isidro --
+            schierkeNode.addEventListener('click', function(e){
+                open("http://bigdingus.github.io/Dingus-HTML/SchierkeCharacterPanel.html", self)
+            })
+
+                // -- Serpico --
+            serpicoNode.addEventListener('click', function(e){
+                open("http://bigdingus.github.io/Dingus-HTML/SerpicoCharacterPanel.html", self)
+            })
+
+                // -- Farnese --
+            farneseNode.addEventListener('click', function(e){
+                open("http://bigdingus.github.io/Dingus-HTML/FarneseCharacterPanel.html", self)
+            })
     </script>
 </body>
 </html>

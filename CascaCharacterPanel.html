@@ -4,79 +4,178 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Galada&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="css/CharacterPanelStyle.css">
+    <link rel="stylesheet" type="text/css" id="js-css-stylesheet" href="css/CharacterPanelStyle - altered.css">
     <link rel="icon" href="img/Berserk.png">
     <title>Character Panel: Casca</title>
 </head>
 <body>
-
-        <!-- Casca  -->
-    <div class="header-element">
-        <header>
-            <img src="img/Berserk.png" class="js-logo" alt="Berserk_logo">
+            <!-- Navbar -->
+        <div class="navbar">
+            <div class="navbar-logo">
+                <img src="img/Berserk.png" class="js-logo" alt="Berserk_logo" title="Back to the homepage.">
                 <p class="js-credit">Made by Kentaro Miura&trade;.</p>
-            <br>
-            
+            </div>
+            <div class="navbar-dropdown">
+                <button type="button" class="dropdown-btn">
+                    Characters
+                </button>
+                <div class="burger-btn">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+                <div class="dropdown">
+                    <ul class="dropdown-contents">
+                        <li><a href="http://bigdingus.github.io/Dingus-HTML/GutsCharacterPanel.html">Guts</a></li>
+                        <li><a href="http://bigdingus.github.io/Dingus-HTML/CascaCharacterPanel.html">Casca</a></li>
+                        <li><a href="http://bigdingus.github.io/Dingus-HTML/PuckCharacterPanel.html">Puck</a></li>
+                        <li><a href="http://bigdingus.github.io/Dingus-HTML/RickertCharacterPanel.html">Rickert</a></li>
+                        <li><a href="http://bigdingus.github.io/Dingus-HTML/SchierkeCharacterPanel.html">Schierke</a></li>
+                        <li><a href="http://bigdingus.github.io/Dingus-HTML/IsidroCharacterPanel.html">Isidro</a></li>
+                        <li><a href="http://bigdingus.github.io/Dingus-HTML/FarneseCharacterPanel.html">Farnese</a></li>
+                        <li><a href="http://bigdingus.github.io/Dingus-HTML/SerpicoCharacterPanel.html">Serpico</a></li>
+                    </ul>
+                </div>
+            </div>
         </div>
         
         <!-- Casca's description -->
         <div class="main-element">
             <main>
                 <h1 class="js-name">Casca</h1>
-                <img src="img/Berserk-Casca-Avatar.jpg" class="js-character-avatar" style="height: 500px;"
-                alt="Casca_profile_pic">
+                <div class="character-avatar">
+                    <img src="img/Berserk-Casca-Avatar.jpg" class="js-character-avatar" style="height: 475px;"
+                    alt="Berserk-Casca-Avatar.jpg" title="Fanart of Casca, from before the Eclipse.">
+                </div>
                 <h2>About Casca:</h2>
-                <p class="description" style="margin-bottom: 4vh;">
+                <p class="description">
                     Casca's the former unit commander of the Band of the Hawk and currently a companion of Guts.
+                     Casca was given away to a pedophile noble as a child, by her poor family. Shortly after she was found by Griffith, who helped her and 
+                     offered her to join his cause. She has been following him ever since.
                 </p>
-                <img src="img/Berserk-Casca-Avatar-Alt.jpg" class="js-character-avatar-alt" alt="Casca_profile_pic_alt">
-                <p style="display: inline-block;" class="caption">
-                    "If he's going to sacrifice everything for his dream,<br> if his dream is to fight and cut away his own path,<br> then I want to be his sword.”<br>
+                <div class="quote">
+                    <p class="caption">
+                        "If he's going to sacrifice everything for his dream, if his dream is to fight and cut away his own path, then I want to be his sword.”<br>
                         <span class="caption-span">-Casca</span></p>
+                    <img src="img/Berserk-Casca-Avatar-Alt.jpg" title="Casca's manga appearance in Golden Age"
+                    class="js-character-avatar-alt" alt="Berserk-Casca-Avatar-Alt.jpg">
+                </div>
             </main>
         </div>
 
 
         <!-- Friends element -->
-            <div class="main-element-friends">
-                <main>
-                    <h2>Friends:</h2>
-                    <ul>
-                        <li>Guts</li>
-                        <br><span>- Casca's romantic interest and former unit commander of the Band of the Hawk</span>
-                        <img src="img/Berserk-Guts-Avatar.jpg" class="guts" title="Post-eclipse picture of Guts." style="width: 400px; height: 400px">
-                        <li>Rickert</li>
-                        <br><span>- Casca's friend and former Band of the Hawk brother-in-arms</span>
-                        <img src="img/Berserk-Rickert-Avatar.jpg" class="rickert" title="Rickert at the hill of blades.">
-                        <li>Farnese</li>
-                        <br><span>- caretaker to Casca, on the group's journey post-Conviction arc, former Holy See, now witch apprentice under Schierke.</span>
-                        <img src="img/Berserk-Farnese-Avatar.jpg" class="farnese" title="Farnese, taking care of indisposed Casca.">
+        <div class="main-element-friends">
+            <main>
+                <h2>Friends:</h2>
+                <ul>
+                    <!-- GUTS -->
+                    <li><div class="friend-character">
+                            <div class="friend-text">
+                                <h4>Guts</h4>
+                                <br>
+                                <span> - Casca's romantic interest and former unit commander of the Band of the Hawk.</span>
+                            </div>
+                            
+                            <img src="img/Berserk-Guts-Avatar.jpg" class="friend-image guts" style="width: 400px;" title="Guts, the Black Swordsman.">
+                        
+                        </div>
+                    </li>
 
-                    </ul>
-            </main>
-            </div>
-            <div class="footer_element">
-                <footer>
-                    <h5 style="text-align: end;">Webpage created for personal learning uses, using the characters of Berserk as a template<br>
-                        Made by: BigDingus&copy;</h5>
-                </footer>
-            </div>
+                    <!-- RICKERT -->
+                    <li><div class="friend-character">
+                            <div class="friend-text">
+                                <h4>Rickert</h4>
+                                <br>
+                                <span> - Tinkerer and a former brother-in-arms. Rickert was the youngest member of the Band of the Hawk, who wasn't present during the Eclipse, thus being left in the dark for the most part.
+                                <br> After Godo's passing, he took care of Godo's adoptive daughter, Erica, and headed towards the newly founded city of Fantasia.</span>
 
+                            </div>
+
+                            <img src="img/Berserk-Rickert-Avatar.jpg" class="friend-image rickert" style="width: 400px;" title="Rickert at the hill of blades.">
+
+                        </div>
+                    </li>
+
+                    <!-- FARNESE -->
+                    <li><div class="friend-character">
+                            <div class="friend-text">
+                                <h4>Farnese</h4>
+                                <br>
+                                <span> - caretaker to Casca, on the group's journey post-Conviction arc, former Holy See, now witch apprentice under Schierke.</span>
+                            </div>
+                                
+                                <img src="img/Berserk-Farnese-Avatar.jpg" class="friend-image farnese" title="Farnese, taking care of indisposed Casca.">
+                                
+                        </div>
+                    </li>
+                    
+                </ul>
+        </main>
+        </div>
+        <div class="footer-element">
+            <footer>
+                <h5>Webpage created for personal learning uses, using the characters of Berserk as a template<br>
+                    Made by: BigDingus&copy;</h5>
+            </footer>
+        </div>
     <script>
                     // A hyperlink taking the user back to the home page
-        let homeNode = document.querySelector("#js-logo")
+        const homeNode = document.querySelector(".js-logo")
+        const gutsNode = document.querySelector(".guts")
+        const rickertNode = document.querySelector(".rickert")
+        const farneseNode = document.querySelector(".farnese")
+
+        
+        const charactersNode = document.querySelector(".dropdown-btn")
+        const dropdownContentsNode = document.querySelector(".dropdown-contents")
+        const burgerNode = document.querySelector(".burger-btn")
+        let clicked = false;
 
         homeNode.addEventListener('click', function(e){
             open("http://bigdingus.github.io/Dingus-HTML", self)
         })
 
-                    // Mouseover event listeners
-        homeNode.addEventListener('mouseover', function(e){
-            homeNode.classList.add('mouseover')
+        charactersNode.addEventListener('click', function(e){
+
+            if(clicked == false){
+                clicked = true;
+                dropdownContentsNode.style.display = "flex";
+            }
+            else {
+                clicked = false
+                dropdownContentsNode.style.display = "none";
+            }
         })
-        homeNode.addEventListener('mouseout', function(e){
-            homeNode.classList.remove('mouseover')
+
+        burgerNode.addEventListener('click', function(e){
+
+            if(clicked == false){
+                clicked = true;
+                dropdownContentsNode.style.display = "flex";
+            
+            }
+            else {
+                clicked = false
+                dropdownContentsNode.style.display = "none";
+            }
         })
+
+                // -- Guts --
+            gutsNode.addEventListener('click', function(e){
+                open("http://bigdingus.github.io/Dingus-HTML/GutsCharacterPanel.html", self)
+        })
+
+                // -- Rickert --
+            rickertNode.addEventListener('click', function(e){
+              open("http://bigdingus.github.io/Dingus-HTML/RickertCharacterPanel.html", self)
+        })
+
+                // -- Farnese --
+            farneseNode.addEventListener('click', function(e){
+                open("http://bigdingus.github.io/Dingus-HTML/FarneseCharacterPanel.html", self)
+        })
+
     </script>
 </body>
 </html>
