@@ -147,7 +147,7 @@ border: 2px solid black;
 cursor: pointer;
 }
 .js-credit{
-padding-left: 4%;
+padding-left: 25px;
 margin-top: 0;
 margin-bottom: 0;
 color: white;
@@ -301,7 +301,7 @@ text-align: right;
     }
     
     .js-credit{
-    padding-left: 40%;
+    padding-left: 25px;
     }
     .js-character-avatar{
     width: 75%;
