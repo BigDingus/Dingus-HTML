@@ -2,184 +2,341 @@
 box-sizing: border-box;
 }
 body {
-border: 50px solid rgba(255, 255, 255, 0.8);
-border-image: url("https://cdn.wallpapersafari.com/65/51/3QObE1.png") 50%;
+
+border: 1px solid rgba(255, 255, 255, 0.8);
+border-image: url("../img/background_frame.png") 50%;
 border-color: #cccccc;
-border-image-width: 125px;
+border-image-width: 120px;
 background: rgb(140,140,140);
 background: linear-gradient(
-    100deg,
+100deg,
 rgba(140,140,140,1) 0%,
 rgba(193,193,193,1) 8%,
 rgba(226,226,226,1) 40%,
 rgba(226,226,226,1) 60%,
 rgba(193,193,193,1) 92%,
 rgba(140,140,140,1) 100%);
-
-
 }
+
+h1{
+font-size: 58px;
+}
+
+h2{
+font-size: 48px;
+}
+
 h1, h2{
 font-family: fantasy, cursive;
+text-align: center;
 color: rgba(255, 136, 0, 0.39);
 text-shadow: 1px 1px rgba(133, 2, 2, 0.664);
 
 border: 4px double black;
+border-radius: 10px;
 
-background: url('../img/page_background.jpg') repeat rgb(24, 23, 23);
+background: url('../img/page_background.jpg') no-repeat rgb(0, 0, 0);
 /* background-image: url('../img/page_background.jpg'); */
-background-repeat: repeat-x;
 background-clip: padding-box;
-background-size: 85%;
-background-position: 32.7vw;
+background-size: 50%;
+background-position: 100%;
 background-attachment: scroll;
-position: relative;
-transition: 500ms all ease-in-out;
 }
 
-header {
+/* Navbar -- START */
+.navbar{
+display: flex;
+justify-content: space-between;
+position: -webkit-sticky;
+position: sticky;
+top: 0;
+z-index: 999;
+height: 110px;
+padding: 15px 5px 15px 5px;
+
+
+
+background: url('../img/page_background.jpg') no-repeat rgb(0, 0, 0);
+background-clip: padding-box;
+background-size: 32%;
+background-position: 70%;
+background-attachment: scroll;
+/* background: 
+linear-gradient(8deg, rgba(164,164,164,1) 0%,
+rgba(89,89,89,1) 41%,
+rgba(66,66,66,1) 59%,
+rgba(18,12,1,1) 100%); */
+
+
+border: 2px solid black;
+border-radius: 5px;
+}
+/* Navbar -- END */
+
+/* Dropdown menu  -- START */
+.dropdown-btn{
+display: block;
+width: 200px;
+height: 100%;
+color: white;
+font-size: 18px;
+background-color: rgb(0, 0, 0);
+border: 0px;
+}
+.dropdown-btn:hover{
+background-color: rgb(46, 46, 46);
+border: 2px solid black;
+}
+.burger-btn{
+display: none;
+}
+.dropdown-contents{
+display: none;
+flex-direction: column;
+padding: 10px 0px 10px 0px;
 text-align: center;
+justify-content: space-around;
+list-style: none;
+background-color: black;
+border: 2px solid rgb(46, 46, 46);
+z-index: 989;
+}
+.dropdown li{
+width: 100%;
+height: 30px;
+padding: 5px;
+}
+.dropdown li a{
+text-decoration: none;
+color: white;
+font-size: 20px;
+}
+.dropdown li:hover{
+background-color: rgb(46, 46, 46);
+cursor: pointer;
+}
+.burger-btn{
+position: absolute;
+top: 2.5rem;
+right: 1.5rem;
+flex-direction: column;
+justify-content: space-between;
+width: 50px;
+height: 21px;
+z-index: 990;
 }
 
-header img.js-logo{
-
-border: none;
-box-shadow: none;
-width: 36%;
-min-width: 440px;
-max-width: 752px;
-height: 30%;
-min-height: 171px;
-max-height: 208px;
-transition: 25ms all ease-in-out;
+.burger-btn .bar{
+height: 3px;
+width: 100%;
+background-color: white;
+border-radius: 10px;
 }
 
-header p.js-credit {
-text-align: right;
-font-size: 15px;
-color: black;
-text-align: right;
+
+/* Dropdown menu -- END */
+
+.js-logo{
+width: 115px;
+height: 50px;
+margin-left: 15px;
+}
+.js-logo:hover{
+border: 2px solid black;
+cursor: pointer;
+}
+.js-credit{
+margin-left: 25px;
+margin-top: 0px;
+color: white;
+}
+/* Navbar -- END */
+
+
+/* Main -- START */
+
+.character-avatar{
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+.js-character-avatar{
+width: 20%;
+border: 4px solid black;
+}
+
+.description{
+font-size: 26px;
+text-indent: 10px;
+font-family: Galada, cursive;
+padding: 5px 10px 10px 10px;
+margin-bottom: 50px;
+}
+.quote{
+display: flex;
+flex-direction: row;
+justify-content: flex-end;
+}
+.caption{
+border: 10px solid rgba(255, 255, 255, 0.8);
+border-image: url(https://cdn.wallpapersafari.com/65/51/3QObE1.png) 50%;
+border-color: #cccccc;
+border-image-width: 125px;
+
+height: fit-content;
+
 position: relative;
-margin-right: 20vw;
+
+top: 0;
+margin: 0;
+padding: 40px 20px 20px 20px;
+font-size: 20px;
+font-family: Galada, cursive;
 }
+.caption span{
+padding: 0px 0px 0px 40px;
+font-size: 26px;
+font-family: Galada, cursive;
+text-decoration: underline;
 
-
-
-
-main {
-text-align: left;
-display:inline-block;
 }
-
-
-
-.js-name{
-font-size: 70px;
-text-align: center;
-}
-
-img.js-character-avatar{
-border: 4px solid;
-padding: 2px;
-border-color: black;
-width: 400px;
-height: 400px;
-margin-left: 42%;
-margin-right: 42%;
+/* In Rickert's character panel */
+.caption span.caption-span-two{
+padding: 5px;
+font-size: 22px;
+text-decoration: none;
 }
 
 .js-character-avatar-alt{
-border: 4px solid;
-padding: 2px;
-border-color: black;
-width: 360px;
-height: 510px;
-float: right;
-margin-bottom: 10vh;
+width: 15%;
+/* height: 375px; */
+border: 4px solid black;
 }
 
-main h2 {
-font-size: 50px;
-padding-left: 10px;
-}
 
-p.description{
-font-family: fantasy;
-font-size: 26px;
-margin-left: 1vw;
-text-indent: 4px;
-}
+/* Main -- END */
 
-p.caption{
+/* Friends -- Start */
 
-
-border: 15px solid rgba(255, 255, 255, 0.8);
-border-image: url("https://cdn.wallpapersafari.com/65/51/3QObE1.png")
-50%;
-
-border-color: #cccccc;
-border-spacing: 500px 100px;
-border-image-width: 50px;
-
-padding: 5px 5px 0px 5px;
-
-font-size: 20px;
-font-family: 'Galada', cursive;
-float: right;
-margin-top: 60px;
-margin-right: 15px;
-}
-
-span.caption-span{
-margin-left: 27vw;
-font-size: 34px;
-}
-.main-element-friends,
-.main-element,
-.header-element,
-.footer_element{
+.main-element-friends{
 width: 100%;
 }
-
 .main-element-friends h2{
-font-size: 50px;
-padding-left: 10px;
+text-align: left;
+padding: 2px 2px 2px 20px
 }
 
-.main-element-friends li{
-font-size: 60px;
-font-family: 'Galada', cursive;
+.main-element-friends ul{
+list-style-type: none;
 }
 
-.main-element-friends span{
-margin-left: 5vw;
-font-size: 26px;
-font-family: fantasy, cursive;
+.friend-character{
+clear: right;
+}
+.friend-text{
+display: flex;
+flex-direction: column;
 }
 
-.main-element-friends img{
-border: 4px solid;
-padding: 2px;
-border-color: black;
-margin-left: 60vw;
-margin-right: 5vw;
-box-shadow: 6px 2px 21px -9px
-rgba(0,0,0,0.63);
+.friend-text h4{
+list-style: none;
+font-family: Galada, cursive;
+font-size: 46px;
+margin-bottom: 5px;
+
 }
 
-img{
-width: 400px;
-height: 75%;
-}
-/* img.casca{
-width: 400px;
-height: 75%;
+.friend-text span{
+font-family: Galada, cursive;
+font-size: 24px;
 }
 
-img.rickert{
-width: 400px;
-height: 75%;
-} */
+.friend-image{
+border: 4px solid black;
+width: 20%;
+float: right;
+}
+.friend-image:hover{
+border: 7px inset black;
+cursor: pointer;
+}
+/* Friends -- End */
 
+
+
+
+/* Footer -- START */
+
+footer{
+clear: right;
+font-size: 20px;
+margin-right: 2%;
+margin-bottom: 5px;
+padding: 3px;
+position: relative;
+text-align: right;
+}
+
+/* Footer -- END */
+
+/* for mobile devices -- START */
+@media (max-width: 430px){
+    .dropdown-btn{
+    display: none;
+    }
+
+    .burger-btn{
+    display: flex;
+    }
+
+    .dropdown-contents{
+    position: relative;
+    top: 4.8rem;
+    }
+
+    .js-character-avatar{
+    width: 75%;
+    }
+
+    .friend-image{
+    width: 100%;
+    }
+    
+
+    .quote{
+    flex-direction: column-reverse;
+    }
+
+    .description{
+    margin-bottom: 20px;
+    }
+
+    .js-character-avatar-alt{
+    align-self: center;
+    width: 70%;
+    margin-bottom: 10px;
+    }
+    
+    .friend-image{
+    transform: scale(0.75);
+    float: none;
+    }
+
+    footer{
+    transform: scale(0.8);
+    }
+
+    
+}
+/* for mobile devices -- END */
+
+
+
+
+
+
+/* JavaScript related attributes
 .mouseoverlogo{
 background: #00000012;
 cursor: pointer;
@@ -187,15 +344,6 @@ cursor: pointer;
 .mouseoverbtn{
 border: 7px inset black;
 cursor: pointer;
-}
-
-
-
-footer{
-font-family: cursive;
-font-size: 20px;
-margin-left: 400px;
-margin-bottom: 5px;
-padding: 3px;
-position: relative;
-}
+} 
+--- deprecated ---
+*/
