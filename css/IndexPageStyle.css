@@ -5,6 +5,7 @@ box-sizing: border-box;
 overflow: visible;
 }
 body{
+
 border: 1px solid rgba(255, 255, 255, 0.8);
 border-image: url("../img/background_frame.png") 50%;
 border-color: #cccccc;
@@ -135,9 +136,8 @@ color: white;
 
 
 
-h1, h2, h3 {
+h1, h2, h3{
 font-family: fantasy, cursive;
-font-size: 72px;
 text-align: center;
 color: rgba(255, 136, 0, 0.39);
 text-shadow: 1px 1px rgba(133, 2, 2, 0.664);
@@ -152,11 +152,16 @@ background-size: 50%;
 background-position: 140%;
 background-attachment: scroll;
 position: relative;
+padding: 10px;
 
 }
 
 h1{
 font-size: 64px;
+}
+
+h3{
+font-size: 48px;
 }
 
 
@@ -222,13 +227,13 @@ footer{
 font-size: 20px;
 margin-right: 2%;
 margin-bottom: 5px;
-padding: 3px;
+padding: 20px;
 position: relative;
 text-align: right;
 }
 
 /* for mobile devices -- START */
-@media (max-width: 430px){
+@media (max-width: 540px){
     .dropdown-btn{
     display: none;
     }
