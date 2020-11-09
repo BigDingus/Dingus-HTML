@@ -16,10 +16,13 @@ rgba(226,226,226,1) 40%,
 rgba(226,226,226,1) 60%,
 rgba(193,193,193,1) 92%,
 rgba(140,140,140,1) 100%);
+
+/* No borders */
+margin: 0;
 }
 
 h1{
-font-size: 58px;
+font-size: 64px;
 }
 
 h2{
@@ -27,10 +30,10 @@ font-size: 48px;
 }
 
 h1, h2{
-font-family: fantasy, cursive;
+font-family: Squada One, cursive;
 text-align: center;
 color: white;
--webkit-text-stroke: 0.5px rgba(128, 128, 128, 0.575);
+/* -webkit-text-stroke: 0.5px rgba(128, 128, 128, 0.575); */
 text-shadow: 1px 1px rgba(133, 2, 2, 0.664);
 
 border: 4px double black;
@@ -70,7 +73,7 @@ rgba(18,12,1,1) 100%); */
 
 
 border: 2px solid black;
-border-radius: 5px;
+/* border-radius: 5px; */
 }
 /* Navbar -- END */
 
@@ -154,7 +157,14 @@ color: white;
 /* Navbar -- END */
 
 
+
 /* Main -- START */
+
+.character-panel-content{
+/* Gives borders only to the content, not to the nav aswell */
+margin: 8px;
+}
+
 
 .character-avatar{
 display: flex;
@@ -163,12 +173,12 @@ align-items: center;
 }
 
 .js-character-avatar{
-width: 20%;
+width: 25%;
 border: 4px solid black;
 }
 
 .description{
-font-size: 26px;
+font-size: 22px;
 text-indent: 10px;
 font-family: Galada, cursive;
 padding: 5px 10px 10px 10px;
@@ -179,38 +189,50 @@ display: flex;
 flex-direction: row;
 justify-content: flex-end;
 }
-.caption{
+
+.captions{
 border: 10px solid rgba(255, 255, 255, 0.8);
 border-image: url(https://cdn.wallpapersafari.com/65/51/3QObE1.png) 50%;
 border-color: #cccccc;
 border-image-width: 125px;
-
 height: fit-content;
 
+display: flex;
+flex-direction: column;
+}
+
+.caption{
 position: relative;
 
 top: 0;
 margin: 0;
-padding: 40px 20px 20px 20px;
-font-size: 20px;
+padding: 40px 20px 0px 30px;
+font-size: 22px;
 font-family: Galada, cursive;
 }
-.caption span{
-padding: 0px 0px 0px 40px;
+
+.spans{
+align-self: flex-end;
+display: inline-flex;
+padding: 0px 15px 20px 0px;
+}
+
+.caption-span{
 font-size: 26px;
 font-family: Galada, cursive;
 text-decoration: underline;
-
+padding-right: 5px;
 }
+
 /* In Rickert's character panel */
-.caption span.caption-span-two{
-padding: 5px;
-font-size: 22px;
+.caption-span-two{
+font-family: Galada, cursive;
+font-size: 26px;
 text-decoration: none;
 }
 
 .js-character-avatar-alt{
-width: 15%;
+width: 20%;
 /* height: 375px; */
 border: 4px solid black;
 }
@@ -253,18 +275,19 @@ flex-direction: column;
 
 .friend-text h4{
 color: orangered;
--webkit-text-stroke: 0.1px #000000c2;
+/* -webkit-text-stroke: 0.1px #000000c2; */
 list-style: none;
 font-family: Galada, cursive;
 font-size: 46px;
 margin-bottom: 5px;
 margin-left: 5%;
+text-shadow: 3px 2px black;
 
 }
 
 .friend-text span{
 font-family: Galada, cursive;
-font-size: 24px;
+font-size: 22px;
 }
 
 .friend-image{
@@ -311,11 +334,29 @@ text-align: right;
     }
 
     .js-character-avatar{
-    width: 75%;
+    width: 90%;
     }
 
     .friend-image{
     width: 100%;
+    }
+
+    .spans{
+    display: flex;
+    flex-direction: column;
+    }
+
+    .caption-span{
+    align-self: inherit;
+    }
+
+    .caption-span-two{
+    align-self: inherit;
+    font-size: 22px;
+    }
+
+    .nbsp{
+    display: none;
     }
     
 

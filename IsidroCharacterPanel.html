@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Squada+One&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Galada&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" id="js-css-stylesheet" href="css/CharacterPanelStyle.css">
     <link rel="icon" href="img/Berserk.png">
@@ -39,123 +40,129 @@
             </div>
         </div>
         
-        <!-- Isidro's description -->
-        <div class="main-element">
-            <main>
-                <h1 class="js-name">Isidro</h1>
-                <div class="character-avatar">
-                    <img src="img/Berserk-Isidro-Avatar.jpg" class="js-character-avatar"
-                    alt="Berserk-Isidro-Avatar.jpg">
-                </div>
-                <h2>About Isidro:</h2>
-                <p class="description">
-                    A young rascal, who the group has run into on their quest to save Casca. He's a self-interested, arrogant, but resourceful aswell,
-                     and has helped the group many times over their journey.
-                <div class="quote">
-                    <p class="caption" style="display: none">
-                        "caption"<br>
-                        <span class="caption-span" style="display: none">-Character</span></p>
-                    <img src="img/Berserk-Isidro-Avatar-Alt.png" title="Isidro on the group's naval journey to Elfheim."
-                    class="js-character-avatar-alt" alt="Berserk-Isidro-Avatar-Alt.png">
-                </div>
+        <div class="character-panel-content">
+            <!-- Isidro's description -->
+            <div class="main-element">
+                <main>
+                    <h1 class="js-name">Isidro</h1>
+                    <div class="character-avatar">
+                        <img src="img/Berserk-Isidro-Avatar.jpg" class="js-character-avatar"
+                        alt="Berserk-Isidro-Avatar.jpg">
+                    </div>
+                    <h2>About Isidro:</h2>
+                    <p class="description">
+                        A young rascal, who the group has run into on their quest to save Casca. He's a self-interested, arrogant, but resourceful aswell,
+                        and has helped the group many times over their journey.</p>
+                    <div class="quote">
+                        <div class="captions" style="display: none;">
+                            <p class="caption" style="display: none">
+                                "caption"</p><br>
+                            <div class="spans">
+                                <span class="caption-span" style="display: none">-Character</span>
+                            </div>
+                        </div>
+                        <img src="img/Berserk-Isidro-Avatar-Alt.png" title="Isidro on the group's naval journey to Elfheim."
+                        class="js-character-avatar-alt" alt="Berserk-Isidro-Avatar-Alt.png">
+                    </div>
+                </main>
+            </div>
+
+
+            <!-- Friends element -->
+            <div class="main-element-friends">
+                <main>
+                    <h2>Friends:</h2>
+                    <ul>
+                        <!-- GUTS -->
+                        <li><div class="friend-character">
+                                <div class="friend-text">
+                                    <h4>Guts</h4>
+                                    <hr class="horizontal_rule">
+                                    <span> - former unit commander of the Band of the Hawk and a role model for Isidro.</span>
+                                </div>
+                                
+                                <img src="img/Berserk-Guts-Avatar.jpg" class="friend-image guts" title="Guts, the Black Swordsman.">
+                            
+                            </div>
+                        </li>
+
+                        <!-- CASCA -->
+                        <li><div class="friend-character">
+                                <div class="friend-text">
+                                    <h4>Casca</h4>
+                                    <hr class="horizontal_rule">
+                                    <span> - Former, second unit commander of the Band of the Hawk, who's helped by Schierke and the rest of the group recover her memory and in doing so, her old self.</span>
+                                </div>
+                                
+                                <img src="img/Berserk-Casca-Avatar.jpg" class="friend-image casca" title="Fanart of Casca, from before the Eclipse.">
+                            
+                            </div>
+                        </li>
+
+                        <!-- PUCK -->
+                        <li><div class="friend-character">
+                                <div class="friend-text">
+                                    <h4>Puck</h4>
+                                    <hr class="horizontal_rule">
+                                    <span> - Guts' sidekick. Very little is known about Puck, other than him being from Elfheim.</span>
+                                </div>
+                            
+                                <img src="img/Berserk-Puck-Avatar.jpg" class="friend-image puck" title="Puck, the elf aka chestnut.">
+                        
+                            </div>
+                        </li>
+                    
+                        <!-- SCHIERKE -->
+                        <li><div class="friend-character">
+                                <div class="friend-text">
+                                    <h4>Schierke</h4>
+                                    <hr class="horizontal_rule">
+                                    <span> - Witch and a port in the storm for Guts during combat. A former witch-in-training, now fully recognized as a 
+                                        witch before her master's passing.
+                                            Now she's taken Farnese under her wing and provides information about magic to the group.</span>
+                                </div>
+
+                            
+                                <img src="img/Berserk-Schierke-Avatar.jpg" class="friend-image schierke" title="Schierke and her friend, Ivalera">
+
+                            </div>
+                        </li>
+                    
+                    <!-- SERPICO -->
+                    <li><div class="friend-character">
+                            <div class="friend-text">
+                                <h4>Serpico</h4>
+                                <hr class="horizontal_rule">
+                                <span> - Former Holy See, a loyal bodyguard to his, initially estranged sister, Lady Farnese.</span>
+                            </div>
+                        
+                                <img src="img/Berserk-Serpico-Avatar.jpg" class="friend-image serpico" title="Serpico, wielding the Sylph blade and cloak.">
+                                
+                        </div>
+                    </li>
+
+                    <!-- FARNESE -->
+                    <li><div class="friend-character">
+                            <div class="friend-text">
+                                <h4>Farnese</h4>
+                                <hr class="horizontal_rule">
+                                <span> - Former Holy See, now witch apprentice under Schierke.</span>
+                            </div>
+                                
+                                <img src="img/Berserk-Farnese-Avatar.jpg" class="friend-image farnese" title="Farnese, taking care of indisposed Casca.">
+                                
+                        </div>
+                    </li>
+
+                    </ul>
             </main>
-        </div>
-
-
-        <!-- Friends element -->
-        <div class="main-element-friends">
-            <main>
-                <h2>Friends:</h2>
-                <ul>
-                    <!-- GUTS -->
-                    <li><div class="friend-character">
-                            <div class="friend-text">
-                                <h4>Guts</h4>
-                                <hr class="horizontal_rule">
-                                <span> - former unit commander of the Band of the Hawk and a role model for Isidro.</span>
-                            </div>
-                            
-                            <img src="img/Berserk-Guts-Avatar.jpg" class="friend-image guts" title="Guts, the Black Swordsman.">
-                        
-                        </div>
-                    </li>
-
-                    <!-- CASCA -->
-                    <li><div class="friend-character">
-                            <div class="friend-text">
-                                <h4>Casca</h4>
-                                <hr class="horizontal_rule">
-                                <span> - Former, second unit commander of the Band of the Hawk, who's helped by Schierke and the rest of the group recover her memory and in doing so, her old self.</span>
-                            </div>
-                            
-                            <img src="img/Berserk-Casca-Avatar.jpg" class="friend-image casca" title="Fanart of Casca, from before the Eclipse.">
-                        
-                        </div>
-                    </li>
-
-                    <!-- PUCK -->
-                    <li><div class="friend-character">
-                            <div class="friend-text">
-                                <h4>Puck</h4>
-                                <hr class="horizontal_rule">
-                                <span> - Guts' sidekick. Very little is known about Puck, other than him being from Elfheim.</span>
-                            </div>
-                        
-                            <img src="img/Berserk-Puck-Avatar.jpg" class="friend-image puck" title="Puck, the elf aka chestnut.">
-                    
-                        </div>
-                    </li>
-                
-                    <!-- SCHIERKE -->
-                    <li><div class="friend-character">
-                            <div class="friend-text">
-                                <h4>Schierke</h4>
-                                <hr class="horizontal_rule">
-                                <span> - Witch and a port in the storm for Guts during combat. A former witch-in-training, now fully recognized as a 
-                                    witch before her master's passing.
-                                        Now she's taken Farnese under her wing and provides information about magic to the group.</span>
-                            </div>
-
-                        
-                            <img src="img/Berserk-Schierke-Avatar.jpg" class="friend-image schierke" title="Schierke and her friend, Ivalera">
-
-                        </div>
-                    </li>
-                
-                <!-- SERPICO -->
-                <li><div class="friend-character">
-                        <div class="friend-text">
-                            <h4>Serpico</h4>
-                            <hr class="horizontal_rule">
-                            <span> - Former Holy See, a loyal bodyguard to his, initially estranged sister, Lady Farnese.</span>
-                        </div>
-                    
-                            <img src="img/Berserk-Serpico-Avatar.jpg" class="friend-image serpico" title="Serpico, wielding the Sylph blade and cloak.">
-                            
-                    </div>
-                </li>
-
-                <!-- FARNESE -->
-                <li><div class="friend-character">
-                        <div class="friend-text">
-                            <h4>Farnese</h4>
-                            <hr class="horizontal_rule">
-                            <span> - Former Holy See, now witch apprentice under Schierke.</span>
-                        </div>
-                            
-                            <img src="img/Berserk-Farnese-Avatar.jpg" class="friend-image farnese" title="Farnese, taking care of indisposed Casca.">
-                            
-                    </div>
-                </li>
-
-                </ul>
-        </main>
-        </div>
-        <div class="footer-element">
-            <footer>
-                <h5>Webpage created for personal learning uses, using the characters of Berserk as a template<br>
-                    Made by: BigDingus&copy;</h5>
-            </footer>
+            </div>
+            <div class="footer-element">
+                <footer>
+                    <h5>Webpage created for personal learning uses, using the characters of Berserk as a template<br>
+                        Made by: BigDingus&copy;</h5>
+                </footer>
+            </div>
         </div>
     <script>
                     // A hyperlink taking the user back to the home page
@@ -174,7 +181,7 @@
         let clicked = false;
 
         homeNode.addEventListener('click', function(e){
-            open("http://bigdingus.github.io/Dingus-HTML", self)
+            open("http://bigdingus.github.io/Dingus-HTML", "_parent")
         })
 
         charactersNode.addEventListener('click', function(e){
@@ -204,32 +211,32 @@
 
                 // -- Guts --
             gutsNode.addEventListener('click', function(e){
-                open("http://bigdingus.github.io/Dingus-HTML/GutsCharacterPanel.html", self)
+                open("http://bigdingus.github.io/Dingus-HTML/GutsCharacterPanel.html", "_parent")
             })
 
                 // -- Casca --
             cascaNode.addEventListener('click', function(e){
-            open("http://bigdingus.github.io/Dingus-HTML/CascaCharacterPanel.html", self)
+            open("http://bigdingus.github.io/Dingus-HTML/CascaCharacterPanel.html", "_parent")
             })
 
                 // -- Puck --
             puckNode.addEventListener('click', function(e){
-                open("http://bigdingus.github.io/Dingus-HTML/PuckCharacterPanel.html", self)
+                open("http://bigdingus.github.io/Dingus-HTML/PuckCharacterPanel.html", "_parent")
             })
             
                 // -- Isidro --
             schierkeNode.addEventListener('click', function(e){
-                open("http://bigdingus.github.io/Dingus-HTML/SchierkeCharacterPanel.html", self)
+                open("http://bigdingus.github.io/Dingus-HTML/SchierkeCharacterPanel.html", "_parent")
             })
 
                 // -- Serpico --
             serpicoNode.addEventListener('click', function(e){
-                open("http://bigdingus.github.io/Dingus-HTML/SerpicoCharacterPanel.html", self)
+                open("http://bigdingus.github.io/Dingus-HTML/SerpicoCharacterPanel.html", "_parent")
             })
 
                 // -- Farnese --
             farneseNode.addEventListener('click', function(e){
-                open("http://bigdingus.github.io/Dingus-HTML/FarneseCharacterPanel.html", self)
+                open("http://bigdingus.github.io/Dingus-HTML/FarneseCharacterPanel.html", "_parent")
             })
     </script>
 </body>
