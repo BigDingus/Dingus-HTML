@@ -12,6 +12,7 @@ border: 1px solid rgba(255, 255, 255, 0.8);
 border-image: url("../img/background_frame.png") 50%;
 border-color: #cccccc;
 border-image-width: 125px;
+
 background: rgb(140,140,140);
 background: linear-gradient(
 100deg,
@@ -88,20 +89,26 @@ background-color: black;
 border: 2px solid rgb(46, 46, 46);
 z-index: 989;
 }
-.dropdown li{
+
+.dropdown-character{
 width: 100%;
 height: 30px;
 padding: 5px;
 }
-.dropdown li a{
+
+.dropdown-character a{
 text-decoration: none;
 color: white;
 font-size: 20px;
+font-family: Teko, cursive;
 }
-.dropdown li:hover{
+
+.dropdown-character:hover{
 background-color: rgb(46, 46, 46);
 cursor: pointer;
 }
+
+
 .burger-btn{
 position: absolute;
 top: 2.5rem;
@@ -142,10 +149,10 @@ color: white;
 
 
 h1, h2, h3{
-font-family: Squada One, cursive;
+font-family: Teko, cursive;
 text-align: center;
-color: rgba(255, 136, 0, 0.39);
-text-shadow: 1px 1px rgba(133, 2, 2, 0.664);
+color: rgb(255, 136, 0);
+text-shadow: 1px 1px rgba(24, 0, 0, 0.664);
 
 border: 4px double black;
 border-radius: 10px;
@@ -161,6 +168,8 @@ padding: 10px;
 
 }
 
+
+
 h1{
 font-size: 64px;
 }
@@ -171,6 +180,54 @@ font-size: 48px;
 
 h3{
 font-size: 46px;
+}
+
+a{
+text-decoration: none;
+}
+
+.nbsp{
+height: 25px;
+}
+
+.context-div{
+display: flex;
+flex-direction: column;
+}
+
+.context{
+transition: all 1000ms ease-in-out;
+flex-direction: column;
+height: fit-content;
+word-wrap: break-word;
+padding: 25px;
+}
+
+.context-text{
+text-indent: 10px;
+}
+
+
+.js-context-switch{
+align-self: Center;
+width: 50%;
+text-align: center;
+border-radius: 10px;
+border: 4px solid black;
+background-color: black;
+color: white;
+margin-top: 0;
+margin-left: 1vw;
+padding: 10px;
+font-size: 20px;
+
+position: relative;
+transition: 250ms ease-out;
+}
+
+.js-context-switch:hover{
+background-color: rgba(128, 128, 128, 0.904);
+border: 3.8px solid black;
 }
 
 
@@ -226,11 +283,16 @@ width: 70%;
 }
 
 .about_project{
-font-size: 22px;
-font-family: Galada, cursive;
+font-size: 26px;
+font-family: Lobster, cursive;
 text-indent: 2px;
 padding: 6px;
 }
+
+.about_text{
+padding: 5px;
+}
+
 .about_project p{
 padding: 20px;
 }
@@ -253,7 +315,7 @@ border: 4px double black;
 
 padding: 0;
 margin: 0;
-transition: 250ms ease-in-out;
+transition: 50ms ease-in-out;
 z-index: 400;
 }
 
@@ -265,7 +327,7 @@ border: 4px solid black;
 
 .character h4{
 width: 400px;
-height: 55px;
+height: 64px;
 
 margin: 0;
 
@@ -281,7 +343,7 @@ rgba(193,193,193,1) 95%,
 rgba(226,226,226,1) 100%);
 
 font-size: 42px;
-font-family: Squada One, cursive;
+font-family: Teko, cursive;
 text-align: center;
 color: rgb(255, 136, 0);
 
@@ -294,16 +356,222 @@ z-index: 401;
 
 
 footer{
-font-size: 20px;
+/* font-size: 20px;
 margin-right: 2%;
 margin-bottom: 5px;
 padding: 20px;
 position: relative;
+text-align: right; */
+
+display: inline-flex;
+font-size: 20px;
+/* margin-right: 2%; */
+width: 100%;
+margin-bottom: 5px;
+padding: 20px;
+position: relative;
+text-align: right;
+justify-content: space-between;
+}
+
+/* Language selection -- START */
+.welcoming-header{
+display: flex;
+flex-direction: column;
+margin-bottom: 0;
+margin-top: 0;
+}
+
+
+.localization-header{
+display: flex;
+justify-content: space-evenly;
+
+border: 4px double white;
+border-radius: 10px;
+
+background: rgb(0, 0, 0);
+margin-bottom: 5%;
+}
+
+
+.local-txt{
+display: flex;
+flex-direction: row;
+}
+
+.local-txt-en, .local-txt-cz{
+display: inline-flex;
+align-self: center;
+font-family: Teko, cursive;
+font-size: 40px;
+text-align: center;
+color: rgb(255, 136, 0);
+text-shadow: 1px 1px rgba(24, 0, 0, 0.664);
+
+position: relative;
+padding: 20px;
+}
+
+
+.vertical-rule{
+display: inline-flex;
+width: 2px;
+height: 90%;
+background-color: black;
+border-radius: 10px;
+box-shadow: 0 0 grey;
+align-self: center;
+padding: 0;
+margin: 0;
+}
+
+
+
+
+
+.buttons{
+display:flex;
+flex-direction: row;
+/* align-self: center; */
+width: 100%;
+justify-content: space-evenly;
+}
+
+.button{
+width: 375px;
+height: 300px;
+
+font-family: Teko, 'Times New Roman', Times, serif;
+font-size: 150px;
+text-align: center;
+
+background-color: rgba(0, 0, 0, 0.678);
+color: white;
+
+border: 2.5px double black;
+border-radius: 10px;
+
+transition: 50ms ease-in-out;
+}
+
+.button:hover{
+border: 1.3px double black;
+background-color: rgba(128, 128, 128, 0.904);
+}
+
+.or-txt{
+display: flex;
+flex-direction: column;
+text-align: center;
+margin-top: auto;
+margin-bottom: auto;
+font-family: Lobster, cursive;
+font-size: 20px;
+}
+
+.hr-index{
+width: 35%;
+height: 2px;
+background-color: black;
+border-radius: 10px;
+box-shadow: 0 0 grey;
+align-self: center;
+padding: 0;
+margin: 0;
+}
+
+.footer-element{
+margin-top: 2%;
+margin-bottom: 0.5%;
+display: flex;
+}
+
+
+.hr-index.or{
+width: 100%;
+}
+
+.footer-localization-swap{
+/* font-size: 20px;
+height: 35%;
+border: 4px solid #232323;
+border-radius: 10px;
+background-color: rgb(0, 0, 0);
+color: white;
+margin-left: 0.5%;
+font-family: 'Teko', cursive;
+padding: 3px;
+width: 40px;
+text-align: center;
+text-decoration: none;
+align-self: flex-end; */
+display: flex;
+flex-direction: row;
+width: 25%;
+margin-left: 0.5%;
+justify-content: left;
+}
+
+.local-swap-anchor:hover{
+background-color: rgb(78 77 77);
+cursor: pointer;
+}
+
+.local-swap-anchor{
+font-size: 20px;
+/* height: 35%; */
+border: 4px solid #232323;
+border-radius: 10px;
+background-color: rgb(0, 0, 0);
+color: white;
+font-family: 'Teko', cursive;
+padding: 3px;
+width: 40px;
+text-align: center;
+text-decoration: none;
+position: relative;
+left: 0.5%;
+align-self: flex-end;
+}
+
+.footer-index{
+justify-content: space-evenly;
+width: 100%;
+display: flex;
+flex-direction: row;
+font-size: 20px;
+margin-right: 0;
+margin-bottom: 0;
+padding: 20px;
+position: relative;
+}
+.footer-index-text-en{
+font-size: 16px;
+margin-bottom: 0.5%;
+margin-right: 10%;
+padding: 10px;
+position: relative;
+text-align: left;
+}
+
+.footer-index-text-cz{
+font-size: 16px;
+margin-bottom: 0.5%;
+margin-left: 10%;
+padding: 10px;
+position: relative;
 text-align: right;
 }
 
+
+
+
+
+/* Language selection -- END */
+
 /* for mobile devices -- START */
-@media (max-width: 540px){
+@media (max-width: 641px){
     .dropdown-btn{
     display: none;
     }
@@ -318,7 +586,7 @@ text-align: right;
     }
 
     h2, h3{
-    font-size: 37px;
+    font-size: 27px;
     }
 
     h1{
@@ -334,6 +602,15 @@ text-align: right;
     padding: 3px;
     }
 
+    .context{
+    font-size: 14px;
+    }
+
+    .js-context-switch{
+    width: 90%;
+    margin-left: 0;
+    }
+
     .characters{
     width: 100%;
     }
@@ -345,7 +622,7 @@ text-align: right;
     }
     .character h4{
     width: 150px;
-    height: 25px;
+    height: 30px;
     
     margin: 0;
     
@@ -361,7 +638,7 @@ text-align: right;
     rgba(226,226,226,1) 100%);
     
     font-size: 21px;
-    font-family: Squada One, cursive;
+    font-family: Teko, cursive;
     text-align: center;
     color: rgb(255, 136, 0);
     
@@ -375,8 +652,34 @@ text-align: right;
     border: 6px solid black;
     }
 
+    .button{
+    width: 135px;
+    height: 75px;
+    font-size: 50px;
+    }
+    
+    .local-txt-cz, .local-txt-en{
+    font-size: 20px;
+    }
+
+    .hr-index{
+    width: 50%;
+    }
+    .footer-localization-swap{
+    justify-content: center;
+    }
+
+    .local-swap-anchor{
+    align-self: center;
+    }
+
+    .footer-element h5{
+    margin-right: 2.5%;
+    }
+
     footer{
-    transform: scale(0.8);
+    padding: 3px;
+    /* transform: scale(0.8); */
     }
     
 }
