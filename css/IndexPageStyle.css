@@ -509,6 +509,7 @@ align-self: flex-end; */
 display: flex;
 flex-direction: row;
 width: 35vw;
+min-width: 23vw;
 margin-left: 0.5%;
 justify-content: left;
 }
@@ -597,6 +598,15 @@ text-align: right;
     border: 2px solid black;
     }
 
+    .main:hover{
+    width: 100%;
+    left: 0vw;
+    top: 5vw;
+    }
+    .inside:hover{
+    right: 0vw;
+    width: 100%;
+    }
     .about_project p, .about_project li{
     font-size: 16px;
     padding: 3px;
@@ -674,7 +684,7 @@ text-align: right;
     }
 
     .footer-element h5{
-    margin-right: 4%;
+    margin-right: 6%;
     font-size: 11px;
     }
 

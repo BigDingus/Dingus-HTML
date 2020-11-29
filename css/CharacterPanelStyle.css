@@ -294,6 +294,7 @@ font-size: 26px;
 .friend-image{
 border: 4px solid black;
 width: 20%;
+min-width: 250px;
 float: right;
 }
 .friend-image:hover{
@@ -385,6 +386,7 @@ cursor: pointer;
 
     .friend-image{
     width: 100%;
+    min-width: unset;
     }
 
     .spans{
@@ -435,7 +437,7 @@ cursor: pointer;
     }
 
     .footer-element h5{
-    margin-right: 4%;
+    margin-right: 6%;
     font-size: 11px;
     }
 
