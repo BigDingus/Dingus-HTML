@@ -319,11 +319,21 @@ display: inline-flex;
 font-size: 20px;
 /* margin-right: 2%; */
 width: 100%;
-margin-bottom: 5px;
+margin-bottom: 0.5%;
 padding: 20px;
 position: relative;
 text-align: right;
 justify-content: space-between;
+}
+
+.footer-page-info{
+display: flex;
+flex-direction: column;
+}
+
+.footer-page-info h5{
+margin: 0;
+margin-top: 1%;
 }
 
 .footer-localization-swap{
@@ -436,13 +446,14 @@ cursor: pointer;
     align-self: center;
     }
 
-    .footer-element h5{
+    .footer-page-info{
     margin-right: 6%;
     font-size: 11px;
     }
 
     footer{
     padding: 3px;
+    margin-bottom: 5%;
     }
 
 }
